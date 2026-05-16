@@ -39,6 +39,10 @@ const TOWNS = [
       { type: "mascot", name: "かくのだてくん", emoji: "🏯", message: "角館の武士の心意気で、みなさんをお迎えします！一緒に仙北を盛り上げませんか？", use_ai: false },
       { type: "celebrity", name: "吉永小百合さん（田沢湖ゆかりの女優）", emoji: "🎬", message: "田沢湖の美しさは日本一。この町の人たちの温かさも日本一です。ぜひ一度来てみてください。", use_ai: false },
     ],
+    industry_partners: [
+      { id: "ip1", name: "あきた穂波農業法人", category: "農業", emoji: "🌾", tagline: "70年続く米づくりを未来へつなぎたい", story: "あきたこまちの産地で3代続く農業法人。高齢化が進み、一緒に農業を担う仲間と、EC販路を広げるDX人材を求めています。", tech: ["水稲栽培（あきたこまち）", "有機農法", "農業機械操作", "直売所運営"], employee_size: "5〜10名", challenges: ["後継者不足", "農業機械の老朽化", "EC販路未整備", "デジタル対応遅れ"], collab_types: ["副業農業体験", "ECサイト構築支援", "農業担い手", "就農支援"], succession: true, dx_need: true, founded: "1955年創業" },
+      { id: "ip2", name: "角館観光旅館「武家の宿」", category: "観光・宿泊", emoji: "🏯", tagline: "武家屋敷の文化を守り続ける旅館", story: "角館の歴史的街並みに佇む旅館。インバウンド急増で多言語対応が急務となり、次の時代を担う後継者も探しています。", tech: ["旅館運営・接客", "茶道・着物体験", "日本庭園維持"], employee_size: "10〜20名", challenges: ["後継者不足", "多言語対応", "予約システム老朽化", "SNS発信不足"], collab_types: ["SNS・動画制作支援", "外国語対応サポート", "事業承継相談", "DX導入支援"], succession: true, dx_need: true, founded: "1962年創業" },
+    ],
   },
   {
     id: "shimane-001", prefecture: "島根県", name: "津和野町", lat: 34.4667, lng: 131.7667,
@@ -67,6 +71,10 @@ const TOWNS = [
     ],
     characters: [
       { type: "mascot", name: "つわぶきちゃん", emoji: "🌸", message: "山陰の小京都・津和野へようこそ！伝統と自然があなたを待っています。", use_ai: false },
+    ],
+    industry_partners: [
+      { id: "ip1", name: "石州和紙工房「和の心」", category: "伝統工芸", emoji: "📜", tagline: "1300年続く石州和紙の技術を次代へ", story: "ユネスコ無形文化遺産に登録された石州和紙の工房。職人技術を継承しながら、ECや海外販路を開きたいと考えています。", tech: ["手漉き和紙製造", "楮（こうぞ）栽培", "染紙・加工技術"], employee_size: "3〜5名", challenges: ["後継者不足", "ECサイト未整備", "海外販路なし", "若手職人育成"], collab_types: ["弟子入り・職人修行", "ECサイト構築", "海外向けブランディング", "副業クリエイター支援"], succession: true, dx_need: true, founded: "1940年代創業" },
+      { id: "ip2", name: "津和野有機農場", category: "農業", emoji: "🐟", tagline: "四季の恵みと鮎が育つ清流農場", story: "津和野川の清流沿いで鮎漁と有機野菜を手がける農場。採用が難しく、農業体験で地域を知ってもらうことから始めたいです。", tech: ["有機野菜栽培", "鮎の養殖・漁業", "農家民泊運営"], employee_size: "3〜8名", challenges: ["採用難", "販路拡大", "設備更新"], collab_types: ["農業体験インターン", "販路開拓支援", "SNS広報", "就農支援"], succession: false, dx_need: true, founded: "1978年創業" },
     ],
   },
   {
@@ -97,6 +105,10 @@ const TOWNS = [
     characters: [
       { type: "ai", name: "こうみちゃん（AI）", emoji: "⛰️", message: "八ヶ岳の麓、標高1000mの町からこんにちは！ITスキルを持つあなた、ここで新しい働き方を見つけませんか？", use_ai: true },
     ],
+    industry_partners: [
+      { id: "ip1", name: "八ヶ岳高原ペンション組合", category: "観光・宿泊", emoji: "🏔️", tagline: "高原の宿を未来につなぐプロジェクト", story: "標高1000mの高原に点在するペンションが連携して存続を模索中。インバウンド対応とオンライン集客のDXが急務です。", tech: ["ペンション・宿泊運営", "自然体験ガイド", "アウトドア施設管理"], employee_size: "各宿2〜5名（組合全体20名超）", challenges: ["後継者不足", "インバウンド対応", "オンライン予約DX", "英語コンテンツ不足"], collab_types: ["英語コンテンツ制作", "予約DX支援", "SNS・動画制作", "外国語ガイド育成"], succession: true, dx_need: true, founded: "1980年代〜各宿創業" },
+      { id: "ip2", name: "高原レタス農業法人 小海ファーム", category: "農業", emoji: "🥬", tagline: "日本一の高原野菜を次の世代へ", story: "八ヶ岳の冷涼な気候を活かしたレタス・高原野菜の農業法人。機械化と担い手育成を進めながら、EC販路も広げたいです。", tech: ["高原野菜（レタス・白菜）栽培", "農業機械操作", "低温冷蔵管理"], employee_size: "8〜15名", challenges: ["後継者不足", "農業機械の更新", "EC・直販強化"], collab_types: ["農業体験・就農研修", "EC販路構築", "副業農業サポート"], succession: false, dx_need: true, founded: "1990年創業" },
+    ],
   },
   {
     id: "hokkaido-001", prefecture: "北海道", name: "東川町", lat: 43.7, lng: 142.5,
@@ -124,6 +136,10 @@ const TOWNS = [
     ],
     characters: [
       { type: "mascot", name: "ひがしかわくん", emoji: "📸", message: "写真文化と大自然の町・東川へ！英語が得意なあなた、外国人観光客を一緒にもてなしましょう！", use_ai: false },
+    ],
+    industry_partners: [
+      { id: "ip1", name: "大雪山麓チーズ工房", category: "食品加工", emoji: "🧀", tagline: "北海道の大地から生まれる本格チーズ", story: "大雪山の伏流水と牧草で育てた牛の生乳を使うチーズ工房。EC強化と海外展開の人材が不足しており、副業でも歓迎します。", tech: ["チーズ製造・熟成管理", "乳牛飼育", "食品衛生管理"], employee_size: "5〜10名", challenges: ["EC販路未整備", "海外展開不足", "SNS・ブランディング弱"], collab_types: ["ECサイト構築", "SNS・動画制作", "海外向け広報", "副業マーケター"], succession: false, dx_need: true, founded: "2003年創業" },
+      { id: "ip2", name: "東川インバウンド観光協同組合", category: "観光", emoji: "🌿", tagline: "外国人観光客と大雪山の出会いをつくる", story: "旭岳登山・写真観光・農村体験を組み合わせたインバウンドツアーを展開。多言語コンテンツと現地ガイドの確保が課題です。", tech: ["ツアー企画・運営", "自然ガイド", "山岳観光"], employee_size: "10〜25名（組合員含む）", challenges: ["多言語対応不足", "ガイド人材不足", "SNS発信力の弱さ", "予約DX"], collab_types: ["多言語コンテンツ制作", "英語・多言語ガイド", "SNS動画発信支援", "DX導入"], succession: false, dx_need: true, founded: "2015年設立" },
     ],
   },
   {
@@ -153,6 +169,10 @@ const TOWNS = [
     characters: [
       { type: "mascot", name: "しまんとくん", emoji: "🌊", message: "日本最後の清流・四万十川があなたを待っています！自然と食の豊かさ、ぜひ体験してみて。", use_ai: false },
     ],
+    industry_partners: [
+      { id: "ip1", name: "四万十川漁業組合", category: "漁業", emoji: "🐟", tagline: "日本最後の清流で生きる漁師の技を守りたい", story: "カツオの一本釣り・川漁・うなぎ漁など、四万十の伝統漁業を守る組合。後継者不足と販路の課題を抱えています。", tech: ["カツオ一本釣り", "川漁（うなぎ・川エビ）", "漁獲物加工・直販"], employee_size: "15〜30名（組合員含む）", challenges: ["後継者・漁師不足", "EC販路未整備", "広報・PR力の弱さ", "若者への技術継承"], collab_types: ["漁業体験・研修", "ECサイト構築支援", "食品ブランディング", "副業広報"], succession: true, dx_need: true, founded: "1953年設立" },
+      { id: "ip2", name: "高知林業株式会社", category: "林業", emoji: "🌲", tagline: "四万十の森を次の世代へつなぐ", story: "四万十源流域の林業・製材を担う地域企業。木材加工から家具製作まで手がけるが、採用難と設備更新に悩んでいます。", tech: ["木材伐採・搬出", "製材・木工加工", "家具・建材製造"], employee_size: "20〜35名", challenges: ["採用難", "設備老朽化", "販路拡大", "DX対応遅れ"], collab_types: ["林業担い手支援", "木材ECサイト構築", "企業連携・BtoBパートナー", "DX導入支援"], succession: false, dx_need: true, founded: "1971年創業" },
+    ],
   },
   {
     id: "fukushima-001", prefecture: "福島県", name: "只見町", lat: 37.35, lng: 139.1833,
@@ -181,6 +201,10 @@ const TOWNS = [
     characters: [
       { type: "mascot", name: "ただみん", emoji: "🌨️", message: "SOS日本一の只見町です！だからこそ、来てくれる方への感謝も日本一。移住支援金も最高額でお待ちしています！", use_ai: false },
     ],
+    industry_partners: [
+      { id: "ip1", name: "只見ブナ木工工房", category: "伝統工芸", emoji: "🪵", tagline: "ブナ原生林の恵みを活かした木工の技術を守る", story: "只見のブナ材を使った手作り木工品の工房。職人技を継ぐ後継者を探しながら、EC販路拡大にも取り組もうとしています。", tech: ["ブナ材加工・木工", "漆塗り・伝統仕上げ", "家具・生活用品製造"], employee_size: "3〜6名", challenges: ["後継者不足", "ECサイト未整備", "SNS発信力の弱さ", "販路が地域内のみ"], collab_types: ["職人弟子入り", "ECサイト構築", "SNS・クリエイター支援", "副業デザイナー"], succession: true, dx_need: true, founded: "1967年創業" },
+      { id: "ip2", name: "只見線観光推進プロジェクト", category: "観光", emoji: "🚂", tagline: "奇跡の鉄道が紡ぐ観光の可能性を拡げたい", story: "復活した只見線を活かした観光ガイド・撮影スポット案内を行う地域団体。コンテンツ発信人材とガイドの担い手が不足しています。", tech: ["観光ガイド・案内", "撮影スポット管理", "体験ツアー企画"], employee_size: "ボランティア含む10名程度", challenges: ["ガイド人材不足", "SNS発信力の弱さ", "インバウンド対応", "運営資金"], collab_types: ["SNS・動画発信支援", "多言語ガイド育成", "観光コンテンツ制作", "副業ライター"], succession: false, dx_need: true, founded: "2022年設立" },
+    ],
   },
   {
     id: "oita-001", prefecture: "大分県", name: "九重町", lat: 33.2167, lng: 131.1667,
@@ -208,6 +232,10 @@ const TOWNS = [
     characters: [
       { type: "mascot", name: "くじゅうベア", emoji: "♨️", message: "日本一の温泉に入りながら働きませんか？体も心もポカポカの九重町でお待ちしています！", use_ai: false },
     ],
+    industry_partners: [
+      { id: "ip1", name: "九重温泉郷旅館「湯の宿 九重」", category: "観光・宿泊", emoji: "♨️", tagline: "日本一の温泉文化を守り続ける旅館", story: "湧出量日本一の温泉地で70年続く旅館。後継者不足と人材確保に悩みながら、SNS活用で若い世代にも知ってもらいたいです。", tech: ["温泉旅館運営・接客", "料理（郷土料理・ジビエ）", "温泉管理・源泉調整"], employee_size: "15〜30名", challenges: ["後継者不足", "採用難", "SNS発信力の弱さ", "予約システム老朽化"], collab_types: ["SNS・動画制作支援", "旅館経営支援", "事業承継相談", "DX・予約システム導入"], succession: true, dx_need: true, founded: "1954年創業" },
+      { id: "ip2", name: "九重有機ファーム", category: "農業", emoji: "🥕", tagline: "くじゅうの大地が育む有機野菜とジビエ", story: "くじゅう連山麓の高原農業法人。有機野菜とジビエ加工を手がけるが、ECサイトがなく販路が地域内に留まっています。", tech: ["有機野菜栽培", "ジビエ（鹿・猪）解体・加工", "農家レストラン運営"], employee_size: "5〜12名", challenges: ["EC・直販力が弱い", "採用難", "SNS活用不足", "加工設備の更新"], collab_types: ["ECサイト・ネット販売構築", "SNS発信支援", "農業体験・インターン", "企業連携・食材供給"], succession: false, dx_need: true, founded: "1998年創業" },
+    ],
   },
   {
     id: "iwate-001", prefecture: "岩手県", name: "遠野市", lat: 39.3333, lng: 141.5333,
@@ -234,6 +262,10 @@ const TOWNS = [
     ],
     characters: [
       { type: "mascot", name: "カッパくん", emoji: "🦎", message: "カッパの里・遠野へようこそ！ホップ畑でビールの原料を収穫しながら、民話の世界に浸りませんか？", use_ai: false },
+    ],
+    industry_partners: [
+      { id: "ip1", name: "遠野ホップ農場「金ケ崎農園」", category: "農業", emoji: "🍺", tagline: "全国のビールを支えるホップ農業を守りたい", story: "遠野産ホップは国産クラフトビールの原料として注目急増中。農家の高齢化で担い手が不足しており、就農希望者を歓迎します。", tech: ["ホップ栽培・収穫", "農業機械操作（トラクター等）", "山菜採取・加工"], employee_size: "5〜10名（季節労働者含む）", challenges: ["後継者・農業担い手不足", "機械化の遅れ", "副産物の販路拡大"], collab_types: ["農業担い手・就農研修", "副業農業体験", "ホップ加工品EC支援", "クラフトビール事業連携"], succession: true, dx_need: false, founded: "1970年代創業" },
+      { id: "ip2", name: "遠野鍛冶屋「南部鉄器工房 虎鉄」", category: "伝統工芸", emoji: "⚙️", tagline: "南部鉄器の技術と誇りを世界へ届けたい", story: "遠野に残る数少ない南部鉄器の鍛冶工房。国内需要は安定しているが、海外需要への対応と弟子育成が急務です。", tech: ["南部鉄器鍛造・鋳造", "金属加工・研磨", "伝統紋様デザイン"], employee_size: "2〜4名", challenges: ["後継者・弟子不足", "海外EC販路なし", "英語対応不可", "ブランディング弱"], collab_types: ["弟子入り・職人修行", "海外ECサイト構築", "多言語対応・翻訳支援", "クラウドファンディング"], succession: true, dx_need: true, founded: "1895年創業" },
     ],
   },
 ];
@@ -333,7 +365,7 @@ async function generateWithClaude(prompt, fallbackText) {
 // SUB COMPONENTS
 // ============================================================
 function Badge({ children, className = "" }) {
-  return <span className={`inline-block text-xs font-medium px-2 py-0.5 rounded-full ${className}`}>{children}</span>;
+  return <span className={`inline-flex items-center text-xs font-medium px-2.5 py-0.5 rounded-full ${className}`}>{children}</span>;
 }
 
 function PeriodBadge({ period }) {
@@ -343,11 +375,21 @@ function PeriodBadge({ period }) {
 function SosBar({ score }) {
   const c = sosColor(score);
   return (
-    <div className="flex items-center gap-2">
-      <div className="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
-        <div className={`h-full rounded-full ${c.bg} transition-all`} style={{ width: `${score}%` }} />
+    <div className="flex items-center gap-2.5">
+      <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+        <div className={`h-full rounded-full ${c.bg} transition-all duration-500`} style={{ width: `${score}%` }} />
       </div>
-      <span className={`text-sm font-bold ${c.text}`}>{score}</span>
+      <span className={`text-sm font-bold tabular-nums ${c.text}`}>{score}</span>
+    </div>
+  );
+}
+
+function StatCard({ label, value, sub }) {
+  return (
+    <div className="text-center bg-white/70 rounded-xl py-2 px-1 border border-white/50">
+      <div className="text-xs text-gray-400 mb-0.5">{label}</div>
+      <div className="text-sm font-bold text-gray-800 leading-tight">{value}</div>
+      {sub && <div className="text-xs text-gray-400">{sub}</div>}
     </div>
   );
 }
@@ -400,87 +442,244 @@ function CharacterBubble({ char, townName }) {
 // ============================================================
 // TOWN CARD
 // ============================================================
-function TownCard({ town, userLoc, favorites, onToggleFav, onClick }) {
+function TownCard({ town, userLoc, favorites, onToggleFav, onClick, rank }) {
   const c = sosColor(town.sos_score);
   const dist = userLoc ? haversine(userLoc.lat, userLoc.lng, town.lat, town.lng) : null;
   const distH = dist ? dist / 80 : null;
   const isFav = favorites.includes(town.id);
   const spotJobs = town.jobs.filter(j => j.period === "spot");
-  const char = town.characters?.[0];
+  const isUrgent = town.sos_score >= 90;
 
   return (
     <div
       onClick={() => onClick(town)}
-      className={`relative bg-white border-2 rounded-2xl p-4 cursor-pointer hover:shadow-lg transition-all hover:-translate-y-0.5 group ${c.border}`}
+      className="relative bg-white rounded-2xl cursor-pointer hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden border border-gray-100 shadow-sm group"
     >
-      {/* Header */}
-      <div className="flex items-start justify-between mb-3">
-        <div>
-          <div className="text-xs text-gray-400 mb-0.5">{town.prefecture}</div>
-          <div className="text-base font-bold text-gray-900">{town.name}</div>
-        </div>
-        <div className="flex items-center gap-2">
-          {distH !== null && distH <= 3 && (
-            <Badge className="bg-green-100 text-green-700 border border-green-200">
-              📍 {distanceLabel(dist)}
-            </Badge>
-          )}
+      {/* Urgency stripe */}
+      <div className={`h-1 w-full ${isUrgent ? "bg-gradient-to-r from-red-500 to-rose-400" : town.sos_score >= 80 ? "bg-gradient-to-r from-amber-400 to-orange-400" : "bg-gradient-to-r from-blue-400 to-indigo-400"}`} />
+
+      <div className="p-5">
+        {/* Header row */}
+        <div className="flex items-start justify-between mb-4">
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-xs text-gray-400 font-medium">{town.prefecture}</span>
+              {isUrgent && <Badge className="bg-red-50 text-red-600 border border-red-100 text-xs">緊急</Badge>}
+              {distH !== null && distH <= 3 && (
+                <Badge className="bg-emerald-50 text-emerald-700 border border-emerald-100">近い</Badge>
+              )}
+            </div>
+            <div className="text-lg font-bold text-gray-900">{town.name}</div>
+          </div>
           <button
             onClick={e => { e.stopPropagation(); onToggleFav(town.id); }}
-            className="text-lg leading-none"
+            className="ml-2 w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors text-base flex-shrink-0"
           >
             {isFav ? "❤️" : "🤍"}
           </button>
         </div>
+
+        {/* SOS Score */}
+        <div className="mb-4">
+          <div className="flex items-center justify-between mb-1.5">
+            <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">SOSスコア</span>
+            <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${c.light} ${c.text}`}>{c.label}</span>
+          </div>
+          <SosBar score={town.sos_score} />
+        </div>
+
+        {/* Stats row */}
+        <div className="grid grid-cols-3 gap-2 mb-4">
+          <div className="text-center bg-gray-50 rounded-xl py-2">
+            <div className="text-xs text-gray-400 mb-0.5">高齢化率</div>
+            <div className="text-sm font-bold text-gray-700">{town.aging_rate}%</div>
+          </div>
+          <div className="text-center bg-gray-50 rounded-xl py-2">
+            <div className="text-xs text-gray-400 mb-0.5">家賃目安</div>
+            <div className="text-sm font-bold text-gray-700">¥{(town.rent/10000).toFixed(1)}万</div>
+          </div>
+          <div className="text-center bg-gray-50 rounded-xl py-2">
+            <div className="text-xs text-gray-400 mb-0.5">外国人材</div>
+            <div className={`text-xs font-bold ${town.foreigners_ok ? "text-emerald-600" : "text-gray-400"}`}>{town.foreigners_ok ? "受入可" : "準備中"}</div>
+          </div>
+        </div>
+
+        {/* Issues */}
+        <div className="flex flex-wrap gap-1.5 mb-4">
+          {town.issues.slice(0,3).map(i => (
+            <span key={i} className="text-xs bg-red-50 text-red-600 px-2.5 py-0.5 rounded-full border border-red-100 font-medium">{i}</span>
+          ))}
+        </div>
+
+        {/* Spot jobs CTA */}
+        {spotJobs.length > 0 && (
+          <div className="bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-100 rounded-xl px-3 py-2.5">
+            <div className="text-xs font-semibold text-orange-700 mb-0.5">単発バイト {spotJobs.length}件あり</div>
+            <div className="text-xs text-orange-600">{spotJobs[0].title} · 日給¥{typeof spotJobs[0].pay === "number" ? spotJobs[0].pay.toLocaleString() : spotJobs[0].pay}</div>
+          </div>
+        )}
+
+        {/* Footer: distance */}
+        {dist && (
+          <div className="mt-3 pt-3 border-t border-gray-50 flex items-center gap-1 text-xs text-gray-400">
+            <span>📍</span>
+            <span>{distanceLabel(dist)}</span>
+            <span className="mx-1">·</span>
+            <span>関わり方 {town.jobs.length}件</span>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ============================================================
+// INDUSTRY PARTNERS TAB
+// ============================================================
+function IndustryPartnersTab({ town }) {
+  const [bizMode, setBizMode] = useState(false);
+  const partners = town.industry_partners || [];
+
+  if (partners.length === 0) {
+    return (
+      <div className="text-center py-10 text-gray-400 text-sm">この自治体の企業連携情報は準備中です</div>
+    );
+  }
+
+  return (
+    <div>
+      {/* Intro */}
+      <div className="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100 rounded-xl p-4 mb-4">
+        <p className="text-sm text-emerald-800 leading-relaxed">
+          🏘️ この町には、<strong>未来につなぎたい地域産業</strong>があります。技術・食・観光・農業を守るため、個人の副業支援から企業連携まで、さまざまな関わり方を募集しています。
+        </p>
       </div>
 
-      {/* SOS Score */}
-      <div className="mb-3">
-        <div className="flex items-center justify-between mb-1">
-          <span className="text-xs text-gray-400">SOSスコア</span>
-          <Badge className={`${c.light} ${c.text} border ${c.border} text-xs`}>{c.label}</Badge>
-        </div>
-        <SosBar score={town.sos_score} />
-      </div>
-
-      {/* Stats */}
-      <div className="grid grid-cols-3 gap-2 mb-3">
-        <div className="text-center bg-gray-50 rounded-lg py-1.5">
-          <div className="text-xs text-gray-400">高齢化率</div>
-          <div className="text-sm font-bold text-gray-700">{town.aging_rate}%</div>
-        </div>
-        <div className="text-center bg-gray-50 rounded-lg py-1.5">
-          <div className="text-xs text-gray-400">家賃目安</div>
-          <div className="text-sm font-bold text-gray-700">¥{(town.rent/10000).toFixed(1)}万</div>
-        </div>
-        <div className="text-center bg-gray-50 rounded-lg py-1.5">
-          <div className="text-xs text-gray-400">外国人材</div>
-          <div className="text-sm font-bold text-gray-700">{town.foreigners_ok ? "受入可" : "準備中"}</div>
+      {/* Mode Toggle */}
+      <div className="flex items-center justify-between mb-4">
+        <span className="text-xs text-gray-500 font-medium">表示を切り替える</span>
+        <div className="flex bg-gray-100 rounded-full p-0.5">
+          <button
+            onClick={() => setBizMode(false)}
+            className={`text-xs px-3 py-1.5 rounded-full transition-all ${!bizMode ? "bg-white text-gray-800 shadow-sm font-medium" : "text-gray-400"}`}
+          >
+            一般向け
+          </button>
+          <button
+            onClick={() => setBizMode(true)}
+            className={`text-xs px-3 py-1.5 rounded-full transition-all ${bizMode ? "bg-indigo-600 text-white font-medium" : "text-gray-400"}`}
+          >
+            企業向け
+          </button>
         </div>
       </div>
 
-      {/* Issues */}
-      <div className="flex flex-wrap gap-1 mb-3">
-        {town.issues.map(i => (
-          <span key={i} className="text-xs bg-red-50 text-red-600 px-2 py-0.5 rounded-full border border-red-100">{i}</span>
+      {/* Partner Cards */}
+      <div className="space-y-3">
+        {partners.map(p => (
+          <div key={p.id} className="bg-white border border-gray-200 rounded-xl overflow-hidden">
+            {/* Card Header */}
+            <div className="p-4 border-b border-gray-50">
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-xl flex-shrink-0 border border-emerald-100">
+                  {p.emoji}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-1.5 flex-wrap mb-1">
+                    <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-medium">{p.category}</span>
+                    {p.succession && <span className="text-xs bg-red-50 text-red-600 border border-red-100 px-2 py-0.5 rounded-full">後継者募集</span>}
+                    {p.dx_need && <span className="text-xs bg-blue-50 text-blue-600 border border-blue-100 px-2 py-0.5 rounded-full">DX支援歓迎</span>}
+                  </div>
+                  <div className="font-medium text-gray-900 text-sm">{p.name}</div>
+                  <div className="text-xs text-gray-500 mt-0.5 italic">「{p.tagline}」</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card Body */}
+            <div className="p-4">
+              {!bizMode ? (
+                <div className="space-y-3">
+                  <p className="text-sm text-gray-700 leading-relaxed">{p.story}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {p.collab_types.map(ct => (
+                      <span key={ct} className="text-xs bg-indigo-50 text-indigo-700 border border-indigo-100 px-2 py-0.5 rounded-full">{ct}</span>
+                    ))}
+                  </div>
+                  <div className="flex gap-2 flex-wrap pt-1">
+                    <button className="text-xs bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition-colors">
+                      🤝 この地域産業を応援する
+                    </button>
+                    <button className="text-xs border border-gray-200 text-gray-600 px-3 py-2 rounded-full hover:border-gray-400 transition-colors">
+                      副業で支援する
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="bg-gray-50 rounded-lg p-2.5">
+                      <div className="text-xs text-gray-400 mb-1">従業員規模</div>
+                      <div className="text-sm font-medium text-gray-700">{p.employee_size}</div>
+                    </div>
+                    <div className="bg-gray-50 rounded-lg p-2.5">
+                      <div className="text-xs text-gray-400 mb-1">創業</div>
+                      <div className="text-sm font-medium text-gray-700">{p.founded}</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-xs text-gray-400 mb-1.5 font-medium">技術・設備・強み</div>
+                    <div className="flex flex-wrap gap-1.5">
+                      {p.tech.map(t => (
+                        <span key={t} className="text-xs bg-amber-50 text-amber-700 border border-amber-100 px-2 py-0.5 rounded-full">{t}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-xs text-gray-400 mb-1.5 font-medium">経営課題</div>
+                    <div className="flex flex-wrap gap-1.5">
+                      {p.challenges.map(ch => (
+                        <span key={ch} className="text-xs bg-red-50 text-red-600 border border-red-100 px-2 py-0.5 rounded-full">{ch}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-xs text-gray-400 mb-1.5 font-medium">協業・支援の形</div>
+                    <div className="flex flex-wrap gap-1.5">
+                      {p.collab_types.map(ct => (
+                        <span key={ct} className="text-xs bg-indigo-50 text-indigo-700 border border-indigo-100 px-2 py-0.5 rounded-full">{ct}</span>
+                      ))}
+                    </div>
+                  </div>
+                  {(p.succession || p.dx_need) && (
+                    <div className="flex flex-wrap gap-1.5">
+                      {p.succession && (
+                        <span className="text-xs bg-red-100 text-red-700 border border-red-200 px-2 py-1 rounded-lg font-medium">📋 事業承継・M&A相談可</span>
+                      )}
+                      {p.dx_need && (
+                        <span className="text-xs bg-blue-100 text-blue-700 border border-blue-200 px-2 py-1 rounded-lg font-medium">💻 DX・IT支援求む</span>
+                      )}
+                    </div>
+                  )}
+                  <div className="flex gap-2 flex-wrap pt-1">
+                    <button className="text-xs bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors">
+                      🏢 企業として相談する
+                    </button>
+                    <button className="text-xs border border-indigo-200 text-indigo-700 px-3 py-2 rounded-full hover:bg-indigo-50 transition-colors">
+                      協業を検討する
+                    </button>
+                    {p.succession && (
+                      <button className="text-xs bg-red-600 text-white px-3 py-2 rounded-full hover:bg-red-700 transition-colors">
+                        事業承継情報を見る
+                      </button>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
         ))}
       </div>
-
-      {/* Spot jobs */}
-      {spotJobs.length > 0 && (
-        <div className="bg-orange-50 border border-orange-100 rounded-lg px-3 py-1.5">
-          <div className="text-xs text-orange-600 font-medium">🕐 単発バイト {spotJobs.length}件</div>
-          <div className="text-xs text-orange-500 mt-0.5">{spotJobs[0].title} ¥{typeof spotJobs[0].pay === "number" ? spotJobs[0].pay.toLocaleString() : spotJobs[0].pay}/日</div>
-        </div>
-      )}
-
-      {/* Character peek */}
-      {char && (
-        <div className="mt-2 flex items-center gap-1.5 text-xs text-gray-400">
-          <span>{char.emoji}</span>
-          <span className="truncate">{char.message.slice(0, 28)}…</span>
-        </div>
-      )}
     </div>
   );
 }
@@ -517,49 +716,57 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
     { id: "events", label: `イベント (${town.events.length}件)` },
     { id: "voices", label: "住民の声" },
     { id: "gifts", label: "返礼品" },
+    { id: "industry", label: "企業連携" },
   ];
 
   return (
-    <div className="fixed inset-0 bg-black/60 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={onClose}>
+    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={onClose}>
       <div
-        className="bg-white w-full sm:max-w-2xl sm:rounded-2xl rounded-t-2xl max-h-[92vh] overflow-hidden flex flex-col shadow-2xl"
+        className="bg-white w-full sm:max-w-2xl sm:rounded-3xl rounded-t-3xl max-h-[94vh] overflow-hidden flex flex-col shadow-2xl"
         onClick={e => e.stopPropagation()}
       >
         {/* Header */}
-        <div className={`${c.light} border-b ${c.border} px-5 py-4`}>
-          <div className="flex items-start justify-between mb-2">
+        <div className={`${c.light} px-5 pt-5 pb-4`}>
+          {/* Drag handle */}
+          <div className="w-10 h-1 bg-gray-300 rounded-full mx-auto mb-4 sm:hidden" />
+
+          <div className="flex items-start justify-between mb-3">
             <div>
-              <div className="text-sm text-gray-500">{town.prefecture}</div>
-              <div className="text-xl font-bold text-gray-900">{town.name}</div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs font-medium text-gray-400">{town.prefecture}</span>
+                {c.label === "緊急" && <Badge className="bg-red-500 text-white text-xs px-2 py-0.5">緊急SOS</Badge>}
+                {town.foreigners_ok && <Badge className="bg-indigo-100 text-indigo-600 text-xs">外国人材OK</Badge>}
+              </div>
+              <div className="text-2xl font-bold text-gray-900">{town.name}</div>
             </div>
             <div className="flex items-center gap-2">
-              <button onClick={() => onToggleFav(town.id)} className="text-2xl">{isFav ? "❤️" : "🤍"}</button>
-              <button onClick={onClose} className="w-8 h-8 flex items-center justify-center bg-white/60 hover:bg-white rounded-full text-gray-500 text-lg">✕</button>
+              <button onClick={() => onToggleFav(town.id)} className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-white/60 transition-colors text-xl">{isFav ? "❤️" : "🤍"}</button>
+              <button onClick={onClose} className="w-9 h-9 flex items-center justify-center bg-white/60 hover:bg-white/90 rounded-full text-gray-500 font-medium transition-colors">✕</button>
             </div>
           </div>
-          <div className="flex items-center gap-3 flex-wrap">
-            <div className="flex items-center gap-2 flex-1 min-w-0">
-              <span className="text-xs text-gray-500">SOSスコア</span>
-              <div className="flex-1"><SosBar score={town.sos_score} /></div>
-              <Badge className={`${c.light} ${c.text} border ${c.border}`}>{c.label}</Badge>
-            </div>
-            {dist && <Badge className="bg-green-100 text-green-700 border border-green-200">📍 {distanceLabel(dist)}</Badge>}
-            {town.foreigners_ok && <Badge className="bg-indigo-100 text-indigo-700 border border-indigo-200">🌍 外国人材受入可</Badge>}
+
+          {/* SOS */}
+          <div className="flex items-center gap-3 mb-4">
+            <span className="text-xs font-medium text-gray-500 whitespace-nowrap">SOSスコア</span>
+            <div className="flex-1"><SosBar score={town.sos_score} /></div>
+            {dist && <span className="text-xs text-emerald-600 font-medium whitespace-nowrap">📍 {distanceLabel(dist)}</span>}
           </div>
+
           {/* Stats row */}
-          <div className="grid grid-cols-4 gap-2 mt-3">
+          <div className="grid grid-cols-4 gap-2">
             {[
               ["人口", `${(town.population/10000).toFixed(1)}万人`],
               ["高齢化率", `${town.aging_rate}%`],
               ["家賃目安", `¥${(town.rent/10000).toFixed(1)}万`],
-              ["通勤時間", `${town.commute_min}分`],
+              ["通勤", `${town.commute_min}分`],
             ].map(([l, v]) => (
-              <div key={l} className="text-center bg-white/60 rounded-lg py-1.5">
-                <div className="text-xs text-gray-400">{l}</div>
-                <div className="text-sm font-bold text-gray-700">{v}</div>
+              <div key={l} className="text-center bg-white/60 rounded-xl py-2 border border-white/50">
+                <div className="text-xs text-gray-400 mb-0.5">{l}</div>
+                <div className="text-sm font-bold text-gray-800">{v}</div>
               </div>
             ))}
           </div>
+
           {/* Characters */}
           {town.characters?.length > 0 && (
             <div className="mt-3 space-y-2">
@@ -569,27 +776,27 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
         </div>
 
         {/* AI紹介文 */}
-        <div className="px-5 py-2 border-b border-gray-100 flex items-center gap-3">
+        <div className="px-5 py-2.5 border-b border-gray-100 bg-gradient-to-r from-indigo-50/50 to-purple-50/50 flex items-center gap-3">
           {aiRecommend ? (
-            <p className="text-sm text-gray-700 flex-1">{aiRecommend}</p>
+            <p className="text-sm text-gray-700 flex-1 leading-relaxed">{aiRecommend}</p>
           ) : (
             <p className="text-xs text-gray-400 flex-1">AIがこの町の魅力を紹介します</p>
           )}
           <button
             onClick={generateAIComment}
-            className="text-xs bg-indigo-600 text-white px-3 py-1.5 rounded-full hover:bg-indigo-700 flex-shrink-0"
+            className="text-xs bg-indigo-600 text-white px-3 py-2 rounded-xl hover:bg-indigo-700 transition-colors flex-shrink-0 font-medium"
           >
-            {aiLoading ? "生成中…" : "✨ AI紹介文"}
+            {aiLoading ? "生成中…" : "✨ AI紹介"}
           </button>
         </div>
 
         {/* Tabs */}
-        <div className="flex overflow-x-auto border-b border-gray-100 px-2 flex-shrink-0">
+        <div className="flex overflow-x-auto border-b border-gray-100 px-4 flex-shrink-0 gap-0">
           {tabs.map(t => (
             <button
               key={t.id}
               onClick={() => setTab(t.id)}
-              className={`flex-shrink-0 px-3 py-2.5 text-xs font-medium border-b-2 transition-colors ${tab === t.id ? "border-indigo-600 text-indigo-600" : "border-transparent text-gray-400 hover:text-gray-600"}`}
+              className={`flex-shrink-0 px-3.5 py-3 text-xs font-semibold border-b-2 transition-all whitespace-nowrap ${tab === t.id ? "border-indigo-600 text-indigo-600" : "border-transparent text-gray-400 hover:text-gray-600 hover:border-gray-200"}`}
             >
               {t.label}
             </button>
@@ -597,53 +804,65 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
         </div>
 
         {/* Tab Content */}
-        <div className="flex-1 overflow-y-auto px-5 py-4">
+        <div className="flex-1 overflow-y-auto px-5 py-5">
 
           {/* 課題 */}
           {tab === "issues" && (
             <div className="space-y-3">
+              <p className="text-xs text-gray-400 font-medium uppercase tracking-wider mb-3">この町が抱える課題</p>
               {town.issues.map(issue => (
-                <div key={issue} className="flex items-start gap-3 bg-red-50 border border-red-100 rounded-xl p-3">
-                  <span className="text-red-400 text-lg">🆘</span>
-                  <div>
-                    <div className="font-medium text-gray-800">{issue}</div>
+                <div key={issue} className="flex items-center gap-3 bg-rose-50 border border-rose-100 rounded-2xl p-4">
+                  <div className="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0">
+                    <span className="text-rose-500 text-sm font-bold">!</span>
                   </div>
+                  <div className="font-semibold text-gray-800">{issue}</div>
                 </div>
               ))}
-              <div className="bg-amber-50 border border-amber-100 rounded-xl p-3 text-sm text-amber-700">
-                💬 あなたの力でこれらの課題を解決できるかもしれません。「関わり方」タブから支援方法を探してみてください。
+              <div className="mt-4 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-100 rounded-2xl p-4">
+                <p className="text-sm text-indigo-700 font-medium mb-2">あなたの力が必要です</p>
+                <p className="text-xs text-indigo-600 leading-relaxed mb-3">これらの課題に、副業・ボランティア・移住など、さまざまな形で関われます。</p>
+                <button onClick={() => setTab("jobs")} className="text-xs bg-indigo-600 text-white px-4 py-2 rounded-xl font-medium hover:bg-indigo-700 transition-colors">
+                  関わり方を見る →
+                </button>
               </div>
             </div>
           )}
 
           {/* 強み */}
           {tab === "strengths" && (
-            <div className="space-y-3">
-              {town.strengths.map(s => (
-                <div key={s} className="flex items-start gap-3 bg-emerald-50 border border-emerald-100 rounded-xl p-3">
-                  <span className="text-emerald-500 text-lg">✅</span>
-                  <div className="font-medium text-gray-800">{s}</div>
-                </div>
-              ))}
-              <div className="mt-2">
-                <div className="text-xs font-medium text-gray-400 mb-2 uppercase tracking-wider">主要産業</div>
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <p className="text-xs text-gray-400 font-medium uppercase tracking-wider">この町の宝もの</p>
+                {town.strengths.map(s => (
+                  <div key={s} className="flex items-start gap-3 bg-emerald-50 border border-emerald-100 rounded-2xl p-4">
+                    <div className="w-6 h-6 rounded-full bg-emerald-200 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-emerald-700 text-xs font-bold">✓</span>
+                    </div>
+                    <div className="text-sm font-medium text-gray-800 leading-relaxed">{s}</div>
+                  </div>
+                ))}
+              </div>
+              <div>
+                <p className="text-xs text-gray-400 font-medium uppercase tracking-wider mb-2">主要産業</p>
                 <div className="grid grid-cols-2 gap-2">
                   {town.industries.map(ind => (
-                    <div key={ind.name} className="bg-white border border-gray-200 rounded-xl p-3">
-                      <div className="font-medium text-gray-700">{ind.name}</div>
-                      <div className="text-xs text-gray-400 mt-0.5">{ind.detail}</div>
+                    <div key={ind.name} className="bg-white border border-gray-100 rounded-2xl p-3.5 shadow-sm">
+                      <div className="font-semibold text-gray-800 text-sm">{ind.name}</div>
+                      <div className="text-xs text-gray-400 mt-0.5 leading-relaxed">{ind.detail}</div>
                     </div>
                   ))}
                 </div>
               </div>
               <div>
-                <div className="text-xs font-medium text-gray-400 mb-2 uppercase tracking-wider">支援制度</div>
-                {town.support.map(s => (
-                  <div key={s} className="flex items-center gap-2 py-1.5 border-b border-gray-100 last:border-0">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">{s}</span>
-                  </div>
-                ))}
+                <p className="text-xs text-gray-400 font-medium uppercase tracking-wider mb-2">移住・支援制度</p>
+                <div className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                  {town.support.map((s, i) => (
+                    <div key={s} className={`flex items-center gap-3 px-4 py-3 ${i < town.support.length-1 ? "border-b border-gray-50" : ""}`}>
+                      <span className="text-emerald-500 font-bold text-sm">✓</span>
+                      <span className="text-sm text-gray-700">{s}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           )}
@@ -651,12 +870,12 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
           {/* 関わり方 */}
           {tab === "jobs" && (
             <div>
-              <div className="flex gap-2 mb-4 flex-wrap">
+              <div className="flex gap-2 mb-4 overflow-x-auto pb-1">
                 {["all","spot","short","mid","long"].map(p => (
                   <button
                     key={p}
                     onClick={() => setPeriodFilter(p)}
-                    className={`text-xs px-3 py-1 rounded-full border transition-colors ${periodFilter === p ? "bg-indigo-600 text-white border-indigo-600" : "border-gray-200 text-gray-500 hover:border-gray-400"}`}
+                    className={`flex-shrink-0 text-xs px-3.5 py-1.5 rounded-full border font-medium transition-all ${periodFilter === p ? "bg-indigo-600 text-white border-indigo-600 shadow-sm" : "border-gray-200 text-gray-500 hover:border-indigo-300 hover:text-indigo-600"}`}
                   >
                     {p === "all" ? "すべて" : PERIOD_LABELS[p]}
                   </button>
@@ -665,29 +884,29 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
               <div className="space-y-3">
                 {filteredJobs.map(job => {
                   const gift = job.gift_id ? town.gifts.find(g => g.id === job.gift_id) : null;
+                  const isSpot = job.period === "spot";
                   return (
-                    <div key={job.id} className={`border rounded-xl p-4 ${job.period === "spot" ? "border-orange-200 bg-orange-50" : "border-gray-200 bg-white"}`}>
-                      <div className="flex items-start justify-between gap-2">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-1 flex-wrap">
+                    <div key={job.id} className={`rounded-2xl p-4 border ${isSpot ? "border-orange-100 bg-gradient-to-br from-orange-50 to-amber-50" : "border-gray-100 bg-white shadow-sm"}`}>
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-1.5 mb-2 flex-wrap">
                             <PeriodBadge period={job.period} />
                             <span className="text-xs text-gray-400">{job.type}</span>
                             {job.remote && <Badge className="bg-blue-50 text-blue-600 border border-blue-100">リモート可</Badge>}
                             {job.transport && <Badge className="bg-gray-50 text-gray-500 border border-gray-200">交通費支給</Badge>}
                           </div>
-                          <div className="font-medium text-gray-900">{job.title}</div>
-                          <div className="text-xs text-gray-400 mt-1">{job.date}</div>
+                          <div className="font-semibold text-gray-900 text-sm mb-1">{job.title}</div>
+                          <div className="text-xs text-gray-400">{job.date}</div>
                           {gift && (
-                            <div className="mt-2 flex items-center gap-1.5 text-xs text-amber-600 bg-amber-50 border border-amber-100 rounded-lg px-2 py-1 w-fit">
-                              <span>🎁</span>
-                              <span>返礼品：{gift.emoji} {gift.name}</span>
+                            <div className="mt-2.5 flex items-center gap-1.5 text-xs text-amber-700 bg-amber-50 border border-amber-100 rounded-xl px-2.5 py-1.5 w-fit font-medium">
+                              🎁 返礼品：{gift.emoji} {gift.name}
                             </div>
                           )}
                         </div>
                         <div className="text-right flex-shrink-0">
-                          <div className="font-bold text-gray-900">{formatPay(job.pay)}</div>
-                          <div className="text-xs text-gray-400">{job.period === "spot" ? "日給" : "報酬"}</div>
-                          <button className="mt-2 text-xs bg-indigo-600 text-white px-3 py-1.5 rounded-full hover:bg-indigo-700">
+                          <div className="font-bold text-gray-900 text-base">{formatPay(job.pay)}</div>
+                          <div className="text-xs text-gray-400 mb-2">{job.period === "spot" ? "日給" : "報酬"}</div>
+                          <button className="text-xs bg-indigo-600 text-white px-4 py-2 rounded-xl hover:bg-indigo-700 transition-colors font-medium">
                             {isLoggedIn ? "応募する" : "詳細を見る"}
                           </button>
                         </div>
@@ -702,14 +921,14 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
           {/* イベント */}
           {tab === "events" && (
             <div>
-              <div className="flex gap-2 mb-4 flex-wrap">
+              <div className="flex gap-2 mb-4 overflow-x-auto pb-1">
                 {["all","fireworks","festival","culture","sport","nature","other"].map(cat => {
                   const ec = EVT_COLORS[cat];
                   return (
                     <button
                       key={cat}
                       onClick={() => setEvtFilter(cat)}
-                      className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${evtFilter === cat ? "bg-indigo-600 text-white border-indigo-600" : "border-gray-200 text-gray-500 hover:border-gray-300"}`}
+                      className={`flex-shrink-0 text-xs px-3 py-1.5 rounded-full border font-medium transition-all ${evtFilter === cat ? "bg-indigo-600 text-white border-indigo-600" : "border-gray-200 text-gray-500 hover:border-indigo-300"}`}
                     >
                       {cat === "all" ? "すべて" : `${ec.icon} ${ec.label}`}
                     </button>
@@ -721,42 +940,38 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
                   const ec = EVT_COLORS[evt.category] || EVT_COLORS.other;
                   const df = formatDate(evt.date);
                   return (
-                    <div key={evt.id} className={`border ${ec.border} ${ec.bg} rounded-xl p-4`}>
+                    <div key={evt.id} className={`border ${ec.border} ${ec.bg} rounded-2xl p-4`}>
                       <div className="flex gap-3">
                         {df && typeof df === "object" ? (
-                          <div className="flex-shrink-0 w-12 text-center bg-white rounded-xl py-1.5 border border-gray-100 shadow-sm">
+                          <div className="flex-shrink-0 w-12 text-center bg-white rounded-xl py-2 border border-gray-100 shadow-sm">
                             <div className="text-xs text-gray-400">{df.month}月</div>
-                            <div className="text-lg font-bold text-gray-800 leading-tight">{df.day}</div>
+                            <div className="text-xl font-bold text-gray-800 leading-tight">{df.day}</div>
                             <div className="text-xs text-gray-400">{df.dow}</div>
                           </div>
                         ) : (
-                          <div className="flex-shrink-0 w-12 text-center">
-                            <div className="text-xl">{ec.icon}</div>
+                          <div className="flex-shrink-0 w-12 flex items-center justify-center">
+                            <div className="text-2xl">{ec.icon}</div>
                           </div>
                         )}
-                        <div className="flex-1">
-                          <div className="flex items-start justify-between gap-2">
-                            <div>
-                              <div className="flex items-center gap-2 flex-wrap mb-1">
-                                <span className={`text-xs font-medium ${ec.text}`}>{ec.icon} {ec.label}</span>
-                                {evt.has_staff_job && (
-                                  <Badge className="bg-green-100 text-green-700 border border-green-200">スタッフ募集中</Badge>
-                                )}
-                                {evt.free && <Badge className="bg-gray-100 text-gray-500 border border-gray-200">無料</Badge>}
-                              </div>
-                              <div className="font-medium text-gray-900 text-sm">{evt.title}</div>
-                              <div className="text-xs text-gray-400 mt-0.5">{evt.time} ｜ {evt.location}</div>
-                              {evt.expected_visitors && (
-                                <div className="text-xs text-gray-400">来場者数 約{evt.expected_visitors.toLocaleString()}人</div>
-                              )}
-                            </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-1.5 flex-wrap mb-1.5">
+                            <span className={`text-xs font-semibold ${ec.text}`}>{ec.label}</span>
+                            {evt.has_staff_job && <Badge className="bg-emerald-100 text-emerald-700 border border-emerald-200">スタッフ募集</Badge>}
+                            {evt.free && <Badge className="bg-gray-100 text-gray-500">無料</Badge>}
                           </div>
+                          <div className="font-semibold text-gray-900 text-sm mb-1">{evt.title}</div>
+                          <div className="text-xs text-gray-400">{evt.time} · {evt.location}</div>
+                          {evt.expected_visitors && (
+                            <div className="text-xs text-gray-400 mt-0.5">来場 約{evt.expected_visitors.toLocaleString()}人</div>
+                          )}
                           {evt.has_staff_job && (
-                            <div className="mt-2 bg-white/70 border border-green-100 rounded-lg px-3 py-2">
-                              <div className="text-xs font-medium text-green-700">募集：{evt.job_title}</div>
-                              {evt.job_pay && <div className="text-xs text-green-600">日給 ¥{evt.job_pay.toLocaleString()}</div>}
-                              <button className="mt-1.5 text-xs bg-green-600 text-white px-3 py-1 rounded-full hover:bg-green-700">
-                                スタッフ応募
+                            <div className="mt-2.5 bg-white/70 border border-emerald-100 rounded-xl px-3 py-2 flex items-center justify-between">
+                              <div>
+                                <div className="text-xs font-semibold text-emerald-700">{evt.job_title}</div>
+                                {evt.job_pay && <div className="text-xs text-emerald-600">日給 ¥{evt.job_pay.toLocaleString()}</div>}
+                              </div>
+                              <button className="text-xs bg-emerald-600 text-white px-3 py-1.5 rounded-xl hover:bg-emerald-700 transition-colors font-medium">
+                                応募する
                               </button>
                             </div>
                           )}
@@ -772,20 +987,24 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
           {/* 住民の声 */}
           {tab === "voices" && (
             <div className="space-y-3">
+              <p className="text-xs text-gray-400 font-medium uppercase tracking-wider mb-3">この町に関わる人の声</p>
               {town.voices.map((v, i) => {
-                const typeLabel = { resident: "住民", migrant: "移住者", visitor: "体験者" };
-                const typeBg = { resident: "bg-blue-100 text-blue-700", migrant: "bg-green-100 text-green-700", visitor: "bg-amber-100 text-amber-700" };
+                const typeLabel = { resident: "地域住民", migrant: "移住者", visitor: "体験参加者" };
+                const typeBg = { resident: "bg-blue-50 text-blue-700 border border-blue-100", migrant: "bg-emerald-50 text-emerald-700 border border-emerald-100", visitor: "bg-amber-50 text-amber-700 border border-amber-100" };
+                const typeEmoji = { resident: "🏡", migrant: "🌱", visitor: "✈️" };
                 return (
-                  <div key={i} className="bg-white border border-gray-200 rounded-xl p-4">
-                    <div className="flex items-center gap-2 mb-2">
-                      <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-sm">
-                        {v.type === "resident" ? "🏠" : v.type === "migrant" ? "🌱" : "✈️"}
+                  <div key={i} className="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm">
+                    <div className="flex items-start gap-3 mb-3">
+                      <div className="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-base flex-shrink-0">
+                        {typeEmoji[v.type]}
                       </div>
-                      <div>
-                        <div className="text-sm font-medium text-gray-800">{v.name}</div>
-                        <Badge className={typeBg[v.type]}>{typeLabel[v.type]}</Badge>
+                      <div className="flex-1 min-w-0">
+                        <div className="text-sm font-semibold text-gray-800 truncate">{v.name}</div>
+                        <div className="flex items-center gap-2 mt-0.5">
+                          <Badge className={typeBg[v.type]}>{typeLabel[v.type]}</Badge>
+                          <span className="text-yellow-400 text-xs">{"★".repeat(v.rating)}</span>
+                        </div>
                       </div>
-                      <div className="ml-auto text-yellow-400">{"★".repeat(v.rating)}{"☆".repeat(5-v.rating)}</div>
                     </div>
                     <p className="text-sm text-gray-700 leading-relaxed">「{v.comment}」</p>
                   </div>
@@ -797,20 +1016,23 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
           {/* 返礼品 */}
           {tab === "gifts" && (
             <div>
-              <p className="text-sm text-gray-500 mb-4">活動・参加後にお礼として受け取れる地域の産品・体験です。</p>
+              <p className="text-xs text-gray-400 font-medium uppercase tracking-wider mb-4">活動後に受け取れる地域の返礼品</p>
               <div className="grid grid-cols-2 gap-3">
                 {town.gifts.map(gift => (
-                  <div key={gift.id} className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-4 text-center">
-                    <div className="text-4xl mb-2">{gift.emoji}</div>
-                    <div className="font-medium text-gray-800 text-sm">{gift.name}</div>
-                    <Badge className={gift.type === "product" ? "bg-amber-100 text-amber-700 mt-2" : "bg-indigo-100 text-indigo-700 mt-2"}>
-                      {gift.type === "product" ? "🛒 産品" : "🎟️ 体験"}
+                  <div key={gift.id} className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 rounded-2xl p-5 text-center shadow-sm">
+                    <div className="text-4xl mb-3">{gift.emoji}</div>
+                    <div className="font-semibold text-gray-800 text-sm mb-2">{gift.name}</div>
+                    <Badge className={gift.type === "product" ? "bg-amber-100 text-amber-700" : "bg-indigo-100 text-indigo-700"}>
+                      {gift.type === "product" ? "産品" : "体験"}
                     </Badge>
                   </div>
                 ))}
               </div>
             </div>
           )}
+
+          {/* 企業連携 */}
+          {tab === "industry" && <IndustryPartnersTab town={town} />}
         </div>
       </div>
     </div>
@@ -858,41 +1080,58 @@ function AIRecommendPage({ towns, user, userLoc }) {
     setLoading(false);
   }
 
+  const skillList = skills.split(/[、,]/).map(v => v.trim()).filter(Boolean);
+
   return (
     <div className="max-w-xl mx-auto px-4 py-6">
-      <h2 className="text-xl font-bold text-gray-900 mb-1">AI推薦</h2>
-      <p className="text-sm text-gray-500 mb-6">あなたのスキルと希望からぴったりの自治体をAIが提案します</p>
+      {/* Page header */}
+      <div className="mb-6">
+        <div className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">AI マッチング</div>
+        <h2 className="text-2xl font-bold text-gray-900 mb-1">あなたにぴったりの自治体を探す</h2>
+        <p className="text-sm text-gray-500 leading-relaxed">スキルと関わり方の希望を選ぶだけで、AIが最適な3自治体を推薦します。</p>
+      </div>
 
-      <div className="space-y-4">
-        <div>
-          <label className="text-xs font-medium text-gray-500 block mb-2">スキル・職種</label>
-          <div className="flex flex-wrap gap-2 mb-2">
-            {SKILL_TAGS.map(s => (
-              <button
-                key={s}
-                onClick={() => toggleSkill(s)}
-                className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${skills.includes(s) ? "bg-indigo-600 text-white border-indigo-600" : "border-gray-200 text-gray-500 hover:border-indigo-300"}`}
-              >
-                {s}
-              </button>
-            ))}
+      <div className="space-y-5">
+        {/* Step 1: Skills */}
+        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs flex items-center justify-center font-bold flex-shrink-0">1</div>
+            <label className="text-sm font-semibold text-gray-800">あなたのスキル・得意なこと</label>
+          </div>
+          <div className="flex flex-wrap gap-2 mb-3">
+            {SKILL_TAGS.map(s => {
+              const active = skillList.includes(s);
+              return (
+                <button
+                  key={s}
+                  onClick={() => toggleSkill(s)}
+                  className={`text-xs px-3.5 py-1.5 rounded-full border font-medium transition-all ${active ? "bg-indigo-600 text-white border-indigo-600 shadow-sm" : "border-gray-200 text-gray-500 hover:border-indigo-300 hover:text-indigo-600"}`}
+                >
+                  {s}
+                </button>
+              );
+            })}
           </div>
           <input
             value={skills}
             onChange={e => setSkills(e.target.value)}
-            placeholder="自由入力可"
-            className="w-full text-sm border border-gray-200 rounded-xl px-3 py-2 focus:outline-none focus:border-indigo-400"
+            placeholder="その他のスキルを自由入力"
+            className="w-full text-sm border border-gray-200 rounded-xl px-4 py-2.5 focus:outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
           />
         </div>
 
-        <div>
-          <label className="text-xs font-medium text-gray-500 block mb-2">関わり方の希望</label>
+        {/* Step 2: Style */}
+        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-6 h-6 rounded-full bg-indigo-600 text-white text-xs flex items-center justify-center font-bold flex-shrink-0">2</div>
+            <label className="text-sm font-semibold text-gray-800">関わり方の希望</label>
+          </div>
           <div className="grid grid-cols-4 gap-2">
             {Object.entries(PERIOD_LABELS).map(([k, v]) => (
               <button
                 key={k}
                 onClick={() => setStyle(k)}
-                className={`text-xs py-2 rounded-xl border transition-colors ${style === k ? "bg-indigo-600 text-white border-indigo-600" : "border-gray-200 text-gray-500 hover:border-indigo-300"}`}
+                className={`text-xs py-2.5 rounded-xl border font-medium transition-all ${style === k ? "bg-indigo-600 text-white border-indigo-600 shadow-sm" : "border-gray-200 text-gray-500 hover:border-indigo-300"}`}
               >
                 {v}
               </button>
@@ -900,18 +1139,24 @@ function AIRecommendPage({ towns, user, userLoc }) {
           </div>
         </div>
 
+        {/* CTA */}
         <button
           onClick={recommend}
           disabled={loading}
-          className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-2xl font-medium hover:opacity-90 disabled:opacity-50 transition-opacity"
+          className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-4 rounded-2xl font-semibold hover:opacity-90 disabled:opacity-50 transition-all shadow-md hover:shadow-lg text-sm"
         >
-          {loading ? "✨ 推薦中..." : "✨ AIに推薦してもらう"}
+          {loading ? "AIが分析中…" : "✨ AIに推薦してもらう"}
         </button>
 
+        {/* Results */}
         {result && (
-          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-100 rounded-2xl p-4">
-            <div className="text-xs font-medium text-indigo-600 mb-2">🤖 AIからの推薦</div>
-            <p className="text-sm text-gray-800 whitespace-pre-wrap leading-relaxed">{result}</p>
+          <div className="bg-white border border-indigo-100 rounded-2xl overflow-hidden shadow-sm">
+            <div className="bg-gradient-to-r from-indigo-600 to-purple-600 px-5 py-3">
+              <div className="text-xs font-semibold text-white/80 uppercase tracking-wider">AI推薦結果</div>
+            </div>
+            <div className="p-5">
+              <p className="text-sm text-gray-800 whitespace-pre-wrap leading-relaxed">{result}</p>
+            </div>
           </div>
         )}
       </div>
@@ -925,64 +1170,93 @@ function AIRecommendPage({ towns, user, userLoc }) {
 function MyPage({ user, towns, favorites, onToggleFav }) {
   const favTowns = towns.filter(t => favorites.includes(t.id));
   return (
-    <div className="max-w-xl mx-auto px-4 py-6 space-y-6">
-      <div className="flex items-center gap-4 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-4 text-white">
-        <div className="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-xl font-bold">
-          {user.name[0]}
+    <div className="max-w-xl mx-auto px-4 py-6 space-y-5">
+      {/* Profile card */}
+      <div className="relative bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 rounded-3xl p-5 text-white overflow-hidden">
+        <div className="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -translate-y-10 translate-x-10" />
+        <div className="relative flex items-center gap-4">
+          <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center text-2xl font-bold border border-white/30">
+            {user.name[0]}
+          </div>
+          <div>
+            <div className="font-bold text-xl leading-tight">{user.name}</div>
+            <div className="text-sm text-indigo-200 mt-0.5">{user.location.label}</div>
+            {user.hometown && <div className="text-xs text-indigo-300 mt-0.5">出身：{user.hometown}</div>}
+          </div>
         </div>
-        <div>
-          <div className="font-bold text-lg">{user.name}</div>
-          <div className="text-sm opacity-80">📍 {user.location.label}</div>
-          {user.hometown && <div className="text-xs opacity-70 mt-0.5">🏡 出身：{user.hometown}</div>}
+        <div className="relative mt-4 flex flex-wrap gap-2">
+          {user.skills.map(s => (
+            <span key={s} className="text-xs bg-white/15 text-white border border-white/20 px-3 py-1 rounded-full font-medium">{s}</span>
+          ))}
         </div>
       </div>
 
-      <div>
-        <div className="text-xs font-medium text-gray-400 uppercase tracking-wider mb-2">スキル</div>
-        <div className="flex flex-wrap gap-2">
-          {user.skills.map(s => <Badge key={s} className="bg-indigo-50 text-indigo-700 border border-indigo-100">{s}</Badge>)}
-        </div>
+      {/* Stats row */}
+      <div className="grid grid-cols-3 gap-3">
+        {[
+          ["お気に入り", favTowns.length, "自治体"],
+          ["活動履歴", user.history.length, "件"],
+          ["返礼品", user.history.filter(h => h.giftReceived).length, "個"],
+        ].map(([label, val, unit]) => (
+          <div key={label} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 text-center">
+            <div className="text-2xl font-bold text-indigo-600">{val}</div>
+            <div className="text-xs text-gray-400 mt-0.5">{label}</div>
+          </div>
+        ))}
       </div>
 
+      {/* Favorites */}
       <div>
-        <div className="text-xs font-medium text-gray-400 uppercase tracking-wider mb-3">❤️ お気に入り自治体 ({favTowns.length}件)</div>
+        <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">お気に入り自治体</div>
         {favTowns.length === 0 ? (
-          <div className="text-sm text-gray-400 text-center py-6">まだお気に入りはありません</div>
+          <div className="bg-white rounded-2xl border border-gray-100 p-8 text-center shadow-sm">
+            <div className="text-3xl mb-2">🤍</div>
+            <div className="text-sm text-gray-400">まだお気に入りはありません</div>
+            <div className="text-xs text-gray-300 mt-1">自治体カードのハートマークで追加できます</div>
+          </div>
         ) : (
           <div className="space-y-2">
-            {favTowns.map(t => (
-              <div key={t.id} className="flex items-center justify-between bg-white border border-gray-200 rounded-xl px-4 py-3">
-                <div>
-                  <div className="text-sm font-medium text-gray-800">{t.prefecture} {t.name}</div>
-                  <SosBar score={t.sos_score} />
+            {favTowns.map(t => {
+              const c = sosColor(t.sos_score);
+              return (
+                <div key={t.id} className="flex items-center gap-4 bg-white border border-gray-100 rounded-2xl px-4 py-3.5 shadow-sm">
+                  <div className={`w-2 h-10 rounded-full ${c.bg} flex-shrink-0`} />
+                  <div className="flex-1 min-w-0">
+                    <div className="text-sm font-semibold text-gray-900">{t.prefecture} {t.name}</div>
+                    <div className="mt-1"><SosBar score={t.sos_score} /></div>
+                  </div>
+                  <button onClick={() => onToggleFav(t.id)} className="text-xl flex-shrink-0">❤️</button>
                 </div>
-                <button onClick={() => onToggleFav(t.id)} className="text-xl ml-3">❤️</button>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>
 
+      {/* Activity history */}
       <div>
-        <div className="text-xs font-medium text-gray-400 uppercase tracking-wider mb-3">📋 活動履歴</div>
+        <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">活動履歴</div>
         {user.history.length === 0 ? (
-          <div className="text-sm text-gray-400 text-center py-6">まだ活動履歴はありません</div>
+          <div className="bg-white rounded-2xl border border-gray-100 p-8 text-center shadow-sm">
+            <div className="text-3xl mb-2">📋</div>
+            <div className="text-sm text-gray-400">まだ活動履歴はありません</div>
+          </div>
         ) : (
           <div className="space-y-2">
             {user.history.map((h, i) => (
-              <div key={i} className="bg-white border border-gray-200 rounded-xl px-4 py-3">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-sm font-medium text-gray-800">{h.title}</div>
-                    <div className="text-xs text-gray-400">{h.date}</div>
+              <div key={i} className="bg-white border border-gray-100 rounded-2xl px-4 py-4 shadow-sm">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1 min-w-0">
+                    <div className="text-sm font-semibold text-gray-800">{h.title}</div>
+                    <div className="text-xs text-gray-400 mt-0.5">{h.date}</div>
+                    {h.giftReceived && (
+                      <div className="mt-2 inline-flex items-center gap-1.5 text-xs text-amber-700 bg-amber-50 border border-amber-100 rounded-xl px-2.5 py-1 font-medium">
+                        🎁 返礼品受取済み
+                      </div>
+                    )}
                   </div>
-                  <Badge className="bg-green-100 text-green-700">参加済み</Badge>
+                  <Badge className="bg-emerald-100 text-emerald-700 border border-emerald-200 flex-shrink-0">参加済み</Badge>
                 </div>
-                {h.giftReceived && (
-                  <div className="mt-2 text-xs text-amber-600 bg-amber-50 rounded-lg px-2 py-1">
-                    🎁 返礼品受取済み
-                  </div>
-                )}
               </div>
             ))}
           </div>
@@ -1012,51 +1286,69 @@ function EventsPage({ towns, userLoc }) {
   });
 
   const filtered = catFilter === "all" ? allEvents : allEvents.filter(e => e.category === catFilter);
+  const staffEvents = allEvents.filter(e => e.has_staff_job).length;
 
   return (
     <div className="max-w-xl mx-auto px-4 py-6">
-      <h2 className="text-xl font-bold text-gray-900 mb-1">全国イベント</h2>
-      {userLoc && <p className="text-sm text-green-600 mb-4">📍 現在地からの距離を表示中</p>}
-      <div className="flex gap-2 mb-4 overflow-x-auto pb-1">
+      <div className="mb-5">
+        <div className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">全国イベント</div>
+        <h2 className="text-2xl font-bold text-gray-900">地域のイベントに参加する</h2>
+        {userLoc
+          ? <p className="text-sm text-emerald-600 mt-1 font-medium">現在地から近い順に表示中</p>
+          : <p className="text-sm text-gray-400 mt-1">スタッフ募集中 {staffEvents}件</p>
+        }
+      </div>
+
+      <div className="flex gap-2 mb-5 overflow-x-auto pb-1">
         {["all","fireworks","festival","culture","sport","nature","other"].map(cat => {
           const ec = EVT_COLORS[cat];
           return (
             <button
               key={cat}
               onClick={() => setCatFilter(cat)}
-              className={`text-xs flex-shrink-0 px-3 py-1.5 rounded-full border transition-colors ${catFilter === cat ? "bg-indigo-600 text-white border-indigo-600" : "border-gray-200 text-gray-500"}`}
+              className={`text-xs flex-shrink-0 px-3.5 py-1.5 rounded-full border font-medium transition-all ${catFilter === cat ? "bg-indigo-600 text-white border-indigo-600 shadow-sm" : "border-gray-200 text-gray-500 hover:border-indigo-300"}`}
             >
               {cat === "all" ? "すべて" : `${ec.icon} ${ec.label}`}
             </button>
           );
         })}
       </div>
+
       <div className="space-y-3">
         {filtered.map((evt, i) => {
           const ec = EVT_COLORS[evt.category] || EVT_COLORS.other;
           const df = formatDate(evt.date);
           return (
-            <div key={i} className={`border ${ec.border} ${ec.bg} rounded-xl p-4`}>
+            <div key={i} className={`bg-white border ${ec.border} rounded-2xl p-4 shadow-sm`}>
               <div className="flex gap-3">
                 {df && typeof df === "object" ? (
-                  <div className="flex-shrink-0 w-12 text-center bg-white rounded-xl py-1.5 border border-gray-100 shadow-sm">
+                  <div className="flex-shrink-0 w-12 text-center bg-gray-50 rounded-xl py-2 border border-gray-100">
                     <div className="text-xs text-gray-400">{df.month}月</div>
-                    <div className="text-base font-bold text-gray-800 leading-tight">{df.day}</div>
+                    <div className="text-xl font-bold text-gray-800 leading-tight">{df.day}</div>
                     <div className="text-xs text-gray-400">{df.dow}</div>
                   </div>
-                ) : <div className="text-2xl">{ec.icon}</div>}
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 flex-wrap mb-1">
-                    <span className={`text-xs font-medium ${ec.text}`}>{ec.icon} {ec.label}</span>
-                    <span className="text-xs text-gray-400">{evt.prefecture} {evt.townName}</span>
-                    {evt.dist && <Badge className="bg-green-100 text-green-700 border border-green-200 text-xs">📍 {distanceLabel(evt.dist)}</Badge>}
-                    {evt.has_staff_job && <Badge className="bg-green-100 text-green-700 border border-green-200">スタッフ募集</Badge>}
+                ) : <div className="text-2xl flex-shrink-0 w-10 flex items-center justify-center">{ec.icon}</div>}
+
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-1.5 flex-wrap mb-1.5">
+                    <span className={`text-xs font-semibold ${ec.text}`}>{ec.label}</span>
+                    <span className="text-xs text-gray-400">·</span>
+                    <span className="text-xs text-gray-500">{evt.prefecture} {evt.townName}</span>
+                    {evt.dist && <Badge className="bg-emerald-50 text-emerald-700 border border-emerald-100">{distanceLabel(evt.dist)}</Badge>}
+                    {evt.has_staff_job && <Badge className="bg-emerald-100 text-emerald-700 border border-emerald-200">スタッフ募集</Badge>}
+                    {evt.free && <Badge className="bg-gray-100 text-gray-500">無料</Badge>}
                   </div>
-                  <div className="font-medium text-gray-900 text-sm">{evt.title}</div>
-                  <div className="text-xs text-gray-400 mt-0.5">{evt.time} ｜ {evt.location}</div>
-                  {evt.has_staff_job && evt.job_pay && (
-                    <div className="mt-1.5 text-xs text-green-700 font-medium">
-                      💼 {evt.job_title} ¥{evt.job_pay.toLocaleString()}/日
+                  <div className="font-semibold text-gray-900 text-sm mb-1">{evt.title}</div>
+                  <div className="text-xs text-gray-400">{evt.time} · {evt.location}</div>
+                  {evt.has_staff_job && (
+                    <div className="mt-2.5 flex items-center justify-between bg-emerald-50 border border-emerald-100 rounded-xl px-3 py-2">
+                      <div>
+                        <div className="text-xs font-semibold text-emerald-700">{evt.job_title}</div>
+                        {evt.job_pay && <div className="text-xs text-emerald-600">日給 ¥{evt.job_pay.toLocaleString()}</div>}
+                      </div>
+                      <button className="text-xs bg-emerald-600 text-white px-3 py-1.5 rounded-xl font-medium hover:bg-emerald-700 transition-colors flex-shrink-0 ml-2">
+                        応募する
+                      </button>
                     </div>
                   )}
                 </div>
@@ -1124,32 +1416,33 @@ export default function MachiMatch() {
     { id: "mypage", icon: "👤", label: "マイページ" },
   ];
 
+  const urgentCount = TOWNS.filter(t => t.sos_score >= 90).length;
+  const totalJobs = TOWNS.reduce((acc, t) => acc + t.jobs.length, 0);
+
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col" style={{ fontFamily: "'Hiragino Sans', 'Noto Sans JP', sans-serif" }}>
+    <div className="min-h-screen bg-slate-50 flex flex-col" style={{ fontFamily: "'Hiragino Sans', 'Noto Sans JP', sans-serif" }}>
       {/* TOP BAR */}
-      <header className="bg-gradient-to-r from-indigo-700 via-indigo-600 to-purple-600 text-white sticky top-0 z-40 shadow-lg">
+      <header className="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-xl">🗾</span>
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-white text-sm font-bold shadow-sm">M</div>
             <div>
-              <div className="font-bold text-base leading-none">Machi Match</div>
-              <div className="text-xs opacity-70 leading-none mt-0.5">全国市町村 マッチングプラットフォーム</div>
+              <div className="font-bold text-gray-900 text-base leading-tight">Machi Match</div>
+              <div className="text-xs text-gray-400 leading-none">地域共創プラットフォーム</div>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            {/* GPS */}
             <button
               onClick={requestGPS}
-              className={`text-xs px-3 py-1.5 rounded-full border transition-all ${userLoc ? "bg-green-500 border-green-400 text-white" : "border-white/40 text-white/80 hover:bg-white/10"}`}
+              className={`text-xs px-3 py-1.5 rounded-full border font-medium transition-all ${userLoc ? "bg-emerald-500 border-emerald-400 text-white" : "border-gray-200 text-gray-500 hover:border-gray-400"}`}
             >
-              {gpsLoading ? "📡..." : userLoc ? "📍 GPS ON" : "📍 GPS"}
+              {gpsLoading ? "取得中..." : userLoc ? "GPS ON" : "現在地"}
             </button>
-            {/* Login toggle */}
             <button
               onClick={() => setIsLoggedIn(p => !p)}
-              className={`text-xs px-3 py-1.5 rounded-full border transition-all ${isLoggedIn ? "bg-white text-indigo-700 border-white font-medium" : "border-white/40 text-white/80 hover:bg-white/10"}`}
+              className={`text-xs px-3 py-1.5 rounded-full border font-medium transition-all ${isLoggedIn ? "bg-indigo-600 text-white border-indigo-600" : "border-gray-200 text-gray-500 hover:border-indigo-300"}`}
             >
-              {isLoggedIn ? `👤 ${user.name.split(" ")[0]}` : "ログイン"}
+              {isLoggedIn ? user.name.split(" ")[0] : "ログイン"}
             </button>
           </div>
         </div>
@@ -1157,8 +1450,8 @@ export default function MachiMatch() {
 
       {/* GPS banner */}
       {userLoc && (
-        <div className="bg-green-50 border-b border-green-200 px-4 py-2 text-xs text-green-700 text-center">
-          📍 現在地：{userLoc.label} からの距離表示が有効です
+        <div className="bg-emerald-50 border-b border-emerald-200 px-4 py-2 text-xs text-emerald-700 text-center font-medium">
+          現在地：{userLoc.label} から距離表示中
         </div>
       )}
 
@@ -1167,85 +1460,130 @@ export default function MachiMatch() {
         {/* MAP PAGE */}
         {page === "map" && (
           <div>
+            {/* Hero section */}
+            <div className="bg-gradient-to-br from-indigo-700 via-indigo-600 to-purple-700 text-white">
+              <div className="max-w-2xl mx-auto px-4 py-8">
+                <div className="text-xs font-semibold text-indigo-300 uppercase tracking-widest mb-2">地域共創プラットフォーム</div>
+                <h1 className="text-2xl sm:text-3xl font-bold leading-snug mb-2">
+                  助けを求める町と<br/>力を活かしたい人をつなぐ
+                </h1>
+                <p className="text-sm text-indigo-200 leading-relaxed mb-5">
+                  全国の過疎地域の課題に、副業・ボランティア・移住・事業承継など<br className="hidden sm:block"/>さまざまな形で関われます。
+                </p>
+                <div className="flex gap-3 flex-wrap mb-6">
+                  <button
+                    onClick={requestGPS}
+                    className="bg-white text-indigo-700 font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-indigo-50 transition-colors shadow-sm"
+                  >
+                    近くのSOSを見る
+                  </button>
+                  <button
+                    onClick={() => setPage("ai")}
+                    className="bg-indigo-500/40 text-white font-medium text-sm px-5 py-2.5 rounded-xl border border-indigo-400/60 hover:bg-indigo-500/60 transition-colors"
+                  >
+                    ✨ AI推薦を使う
+                  </button>
+                </div>
+                <div className="grid grid-cols-3 gap-4 border-t border-indigo-500/50 pt-5">
+                  <div>
+                    <div className="text-2xl font-bold">{TOWNS.length}</div>
+                    <div className="text-xs text-indigo-300">参加自治体</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-rose-300">{urgentCount}</div>
+                    <div className="text-xs text-indigo-300">緊急SOS</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold">{totalJobs}</div>
+                    <div className="text-xs text-indigo-300">関わり方</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Search & filters */}
-            <div className="bg-white border-b border-gray-100 sticky top-[56px] z-30 shadow-sm">
+            <div className="bg-white border-b border-gray-100 sticky top-[57px] z-30 shadow-sm">
               <div className="max-w-2xl mx-auto px-4 py-3 space-y-2">
                 <input
                   value={search}
                   onChange={e => setSearch(e.target.value)}
-                  placeholder="🔍 市町村名・課題・産業で検索"
-                  className="w-full text-sm border border-gray-200 rounded-xl px-4 py-2 focus:outline-none focus:border-indigo-400"
+                  placeholder="市町村名・課題・産業で検索"
+                  className="w-full text-sm border border-gray-200 rounded-xl px-4 py-2.5 focus:outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all"
                 />
                 <div className="flex gap-2 overflow-x-auto pb-0.5">
-                  {/* Period filter */}
                   {["all","spot","short","mid","long"].map(p => (
                     <button
                       key={p}
                       onClick={() => setPeriodFilter(p)}
-                      className={`flex-shrink-0 text-xs px-3 py-1 rounded-full border transition-colors ${periodFilter === p ? "bg-indigo-600 text-white border-indigo-600" : "border-gray-200 text-gray-500"}`}
+                      className={`flex-shrink-0 text-xs px-3 py-1.5 rounded-full border font-medium transition-all ${periodFilter === p ? "bg-indigo-600 text-white border-indigo-600" : "border-gray-200 text-gray-500 hover:border-indigo-300"}`}
                     >
                       {p === "all" ? "すべて" : PERIOD_LABELS[p]}
                     </button>
                   ))}
-                  <div className="w-px bg-gray-200 flex-shrink-0" />
+                  <div className="w-px bg-gray-200 flex-shrink-0 mx-1" />
                   <button
                     onClick={() => setOnlyWithSpot(p => !p)}
-                    className={`flex-shrink-0 text-xs px-3 py-1 rounded-full border transition-colors ${onlyWithSpot ? "bg-orange-500 text-white border-orange-500" : "border-gray-200 text-gray-500"}`}
+                    className={`flex-shrink-0 text-xs px-3 py-1.5 rounded-full border font-medium transition-all ${onlyWithSpot ? "bg-orange-500 text-white border-orange-500" : "border-gray-200 text-gray-500 hover:border-orange-300"}`}
                   >
-                    🕐 単発あり
+                    単発あり
                   </button>
                   <button
                     onClick={() => setOnlyWithGift(p => !p)}
-                    className={`flex-shrink-0 text-xs px-3 py-1 rounded-full border transition-colors ${onlyWithGift ? "bg-amber-500 text-white border-amber-500" : "border-gray-200 text-gray-500"}`}
+                    className={`flex-shrink-0 text-xs px-3 py-1.5 rounded-full border font-medium transition-all ${onlyWithGift ? "bg-amber-500 text-white border-amber-500" : "border-gray-200 text-gray-500 hover:border-amber-300"}`}
                   >
-                    🎁 返礼品あり
+                    返礼品あり
                   </button>
-                  {userLoc && (
-                    <>
-                      {[0,1,2,3].map(h => (
-                        <button
-                          key={h}
-                          onClick={() => setTravelFilter(h)}
-                          className={`flex-shrink-0 text-xs px-3 py-1 rounded-full border transition-colors ${travelFilter === h ? "bg-green-600 text-white border-green-600" : "border-gray-200 text-gray-500"}`}
-                        >
-                          {h === 0 ? "距離：全て" : `〜${h}時間`}
-                        </button>
-                      ))}
-                    </>
-                  )}
-                  <div className="w-px bg-gray-200 flex-shrink-0" />
+                  {userLoc && [1,2,3].map(h => (
+                    <button
+                      key={h}
+                      onClick={() => setTravelFilter(travelFilter === h ? 0 : h)}
+                      className={`flex-shrink-0 text-xs px-3 py-1.5 rounded-full border font-medium transition-all ${travelFilter === h ? "bg-emerald-600 text-white border-emerald-600" : "border-gray-200 text-gray-500 hover:border-emerald-300"}`}
+                    >
+                      〜{h}時間
+                    </button>
+                  ))}
+                  <div className="w-px bg-gray-200 flex-shrink-0 mx-1" />
                   <button
                     onClick={() => setSortBy(p => p === "score" ? "dist" : "score")}
-                    className="flex-shrink-0 text-xs px-3 py-1 rounded-full border border-gray-200 text-gray-500"
+                    className="flex-shrink-0 text-xs px-3 py-1.5 rounded-full border border-gray-200 text-gray-500 font-medium hover:border-gray-400 transition-all"
                   >
-                    {sortBy === "score" ? "🔥 SOS順" : "📍 距離順"}
+                    {sortBy === "score" ? "SOS順" : "距離順"}
                   </button>
                 </div>
               </div>
             </div>
 
             {/* Emergency banner */}
-            <div className="max-w-2xl mx-auto px-4 pt-4">
-              <div className="bg-red-600 text-white rounded-2xl px-4 py-3 mb-4 flex items-center justify-between">
-                <div>
-                  <div className="text-xs opacity-80">今週末 緊急SOS</div>
-                  <div className="font-bold">福島県 只見町 — SOS 96点</div>
-                  <div className="text-xs opacity-80 mt-0.5">雪かきスタッフ 今すぐ必要！日給¥6,000+返礼品</div>
+            <div className="max-w-2xl mx-auto px-4 pt-5">
+              <div className="relative bg-gradient-to-r from-red-600 to-rose-500 text-white rounded-2xl px-5 py-4 mb-5 overflow-hidden shadow-md">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-8 translate-x-8" />
+                <div className="relative flex items-center justify-between gap-4">
+                  <div>
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-xs font-semibold bg-white/20 px-2 py-0.5 rounded-full">緊急SOS</span>
+                      <span className="text-xs text-red-200">今週末</span>
+                    </div>
+                    <div className="font-bold text-base">福島県 只見町 — SOS 96点</div>
+                    <div className="text-xs text-red-200 mt-0.5">雪かきスタッフ 今すぐ必要！日給¥6,000 + 地酒返礼品</div>
+                  </div>
+                  <button
+                    onClick={() => setSelectedTown(TOWNS.find(t => t.id === "fukushima-001"))}
+                    className="bg-white text-red-600 text-xs px-4 py-2.5 rounded-xl font-semibold flex-shrink-0 hover:bg-red-50 transition-colors shadow-sm"
+                  >
+                    詳細 →
+                  </button>
                 </div>
-                <button
-                  onClick={() => setSelectedTown(TOWNS.find(t => t.id === "fukushima-001"))}
-                  className="bg-white text-red-600 text-xs px-3 py-2 rounded-xl font-medium flex-shrink-0 ml-3"
-                >
-                  詳細 →
-                </button>
               </div>
             </div>
 
             {/* Town grid */}
-            <div className="max-w-2xl mx-auto px-4 pb-4">
-              <div className="text-xs text-gray-400 mb-3">{towns.length}件の自治体</div>
+            <div className="max-w-2xl mx-auto px-4 pb-6">
+              <div className="flex items-center justify-between mb-4">
+                <div className="text-sm font-semibold text-gray-700">{towns.length}自治体</div>
+                {search && <div className="text-xs text-gray-400">「{search}」の検索結果</div>}
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {towns.map(t => (
+                {towns.map((t, i) => (
                   <TownCard
                     key={t.id}
                     town={t}
@@ -1253,6 +1591,7 @@ export default function MachiMatch() {
                     favorites={favorites}
                     onToggleFav={toggleFav}
                     onClick={setSelectedTown}
+                    rank={i + 1}
                   />
                 ))}
               </div>
@@ -1266,30 +1605,31 @@ export default function MachiMatch() {
           isLoggedIn
             ? <MyPage user={user} towns={TOWNS} favorites={favorites} onToggleFav={toggleFav} />
             : (
-              <div className="flex flex-col items-center justify-center py-20 px-8 text-center">
-                <div className="text-5xl mb-4">👤</div>
-                <div className="text-lg font-bold text-gray-800 mb-2">ログインが必要です</div>
-                <p className="text-sm text-gray-500 mb-6">マイページではお気に入り・活動履歴・返礼品の記録を管理できます。</p>
-                <button onClick={() => setIsLoggedIn(true)} className="bg-indigo-600 text-white px-8 py-3 rounded-2xl font-medium hover:bg-indigo-700">
-                  モックログイン（デモ用）
+              <div className="flex flex-col items-center justify-center py-20 px-8 text-center max-w-sm mx-auto">
+                <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center text-4xl mb-5 shadow-sm">👤</div>
+                <div className="text-xl font-bold text-gray-900 mb-2">マイページ</div>
+                <p className="text-sm text-gray-500 mb-8 leading-relaxed">ログインすると、お気に入り自治体・活動履歴・返礼品の管理ができます。</p>
+                <button onClick={() => setIsLoggedIn(true)} className="w-full bg-indigo-600 text-white px-8 py-3.5 rounded-2xl font-semibold hover:bg-indigo-700 transition-colors shadow-sm">
+                  デモログイン
                 </button>
+                <p className="text-xs text-gray-300 mt-3">デモ用モックアカウントでログインします</p>
               </div>
             )
         )}
       </main>
 
       {/* BOTTOM NAV */}
-      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-40 shadow-lg">
+      <nav className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-gray-100 z-40 shadow-lg">
         <div className="max-w-2xl mx-auto flex">
           {navItems.map(item => (
             <button
               key={item.id}
               onClick={() => setPage(item.id)}
-              className={`flex-1 flex flex-col items-center py-2.5 gap-0.5 transition-colors ${page === item.id ? "text-indigo-600" : "text-gray-400 hover:text-gray-600"}`}
+              className={`flex-1 flex flex-col items-center pt-2 pb-3 gap-0.5 transition-all ${page === item.id ? "text-indigo-600" : "text-gray-400 hover:text-gray-600"}`}
             >
-              <span className="text-lg leading-none">{item.icon}</span>
-              <span className="text-xs leading-none">{item.label}</span>
-              {page === item.id && <div className="w-4 h-0.5 bg-indigo-600 rounded-full mt-0.5" />}
+              {page === item.id && <div className="w-6 h-0.5 bg-indigo-600 rounded-full absolute top-0" />}
+              <span className={`text-xl leading-none transition-transform ${page === item.id ? "scale-110" : ""}`}>{item.icon}</span>
+              <span className={`text-xs leading-none font-medium ${page === item.id ? "text-indigo-600" : "text-gray-400"}`}>{item.label}</span>
             </button>
           ))}
         </div>
