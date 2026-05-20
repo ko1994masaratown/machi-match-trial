@@ -12,6 +12,11 @@ const TOWNS = [
     industries: [{ name: "農業", detail: "米・野菜・果物" }, { name: "観光", detail: "インバウンド増加中" }],
     support: ["移住支援金最大100万円", "空き家バンクあり", "子育て支援充実", "外国人相談窓口"],
     foreigners_ok: true,
+    imageUrl: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80&auto=format&fit=crop",
+    catchCopy: "武家屋敷と田沢湖の里。あきたこまちを守る農業・観光の担い手を。",
+    issueTags: ["農業後継者不足", "介護人材不足", "観光DX"],
+    participationThemes: ["農業体験", "観光支援", "介護", "副業リモート"],
+    sosSummary: "高齢化率51%。農業・介護・観光3分野で人材を急募中。あなたのスキルがこの町の未来を変えます。",
     jobs: [
       { id: "j1", period: "spot", type: "単発アルバイト", title: "田植えアルバイト", date: "6/14〜15", pay: 8500, transport: true, gift_id: "g1" },
       { id: "j2", period: "spot", type: "単発アルバイト", title: "稲刈りスタッフ", date: "9/20〜21", pay: 9000, transport: true, gift_id: "g1" },
@@ -52,6 +57,11 @@ const TOWNS = [
     industries: [{ name: "伝統工芸", detail: "石州和紙・陶芸" }, { name: "農業", detail: "鮎・有機野菜" }],
     support: ["空き家バンク活用補助", "子育て世帯家賃補助", "移住コーディネーターあり"],
     foreigners_ok: false,
+    imageUrl: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80&auto=format&fit=crop",
+    catchCopy: "山陰の小京都、石州和紙の技を次の世代へ。伝統と自然に関わる人を求む。",
+    issueTags: ["農業後継者不足", "空き家増加", "伝統工芸存続"],
+    participationThemes: ["伝統工芸体験", "農業支援", "空き家活用", "移住定住"],
+    sosSummary: "人口7,800人。石州和紙職人の技術継承者が不在。空き家活用で新しい暮らしを始めませんか。",
     jobs: [
       { id: "j1", period: "spot", type: "単発アルバイト", title: "鷺舞祭り設営スタッフ", date: "7/20〜21", pay: 7000, transport: true, gift_id: "g1" },
       { id: "j2", period: "mid", type: "副業", title: "和紙工房のECサイト構築", date: "2ヶ月", pay: "要相談", remote: true, gift_id: "g2" },
@@ -85,6 +95,11 @@ const TOWNS = [
     industries: [{ name: "観光", detail: "ペンション・スキー場" }, { name: "農業", detail: "高原野菜・レタス" }],
     support: ["UIターン奨励金あり", "テレワーク移住補助", "保育所完備"],
     foreigners_ok: true,
+    imageUrl: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&auto=format&fit=crop",
+    catchCopy: "八ヶ岳麓、標高1000mの高原リゾート。ITと観光で地域に新しい風を。",
+    issueTags: ["IT人材不足", "観光DX", "子育て環境整備"],
+    participationThemes: ["IT・DX支援", "観光ガイド", "リモートワーク移住", "英語対応"],
+    sosSummary: "IT人材・観光担い手が絶対的に不足。テレワーク移住補助あり。高原の自然の中で新しい働き方を。",
     jobs: [
       { id: "j1", period: "spot", type: "単発アルバイト", title: "八ヶ岳マラソン運営スタッフ", date: "5/25", pay: 8000, transport: true, gift_id: "g1" },
       { id: "j2", period: "mid", type: "リモート支援", title: "観光サイトのDX改善", date: "3ヶ月", pay: "要相談", remote: true, gift_id: "g2" },
@@ -118,6 +133,11 @@ const TOWNS = [
     industries: [{ name: "観光", detail: "インバウンド・登山" }, { name: "農業", detail: "米・野菜・チーズ" }],
     support: ["移住体験住宅あり", "家具付き短期滞在可", "英語話者歓迎"],
     foreigners_ok: true,
+    imageUrl: "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=80&auto=format&fit=crop",
+    catchCopy: "旭岳と写真の町。急増するインバウンドを迎える多言語人材を求む。",
+    issueTags: ["英語対応不足", "観光人材不足", "多言語化"],
+    participationThemes: ["英語ガイド", "インバウンド対応", "コンテンツ制作", "多言語サポート"],
+    sosSummary: "外国人観光客急増中。英語・多言語対応できる人材が緊急課題。写真文化と大自然の町で活躍を。",
     jobs: [
       { id: "j1", period: "spot", type: "単発アルバイト", title: "雪まつり設営スタッフ", date: "2/8〜9", pay: 10000, transport: false, gift_id: "g1" },
       { id: "j2", period: "short", type: "短期滞在", title: "英語ガイド（夏季）", date: "7〜8月", pay: 20000, transport: false, gift_id: "g2" },
@@ -150,6 +170,11 @@ const TOWNS = [
     industries: [{ name: "漁業", detail: "カツオ・うなぎ" }, { name: "農林業", detail: "しょうが・ゆず" }],
     support: ["空き家改修補助", "就農支援金あり", "お試し移住制度"],
     foreigners_ok: false,
+    imageUrl: "https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=800&q=80&auto=format&fit=crop",
+    catchCopy: "日本最後の清流と生きる。自然と地域の恵みを守る仲間を。",
+    issueTags: ["医療人材不足", "農林業後継者", "若者流出"],
+    participationThemes: ["農林業体験", "地域おこし協力隊", "医療・介護支援", "観光ガイド"],
+    sosSummary: "若者流出が深刻。四万十川を守る農業・林業の担い手が急募。清流と食の豊かさと共に生きませんか。",
     jobs: [
       { id: "j1", period: "spot", type: "単発アルバイト", title: "四万十川いかだ下りスタッフ", date: "7〜8月週末", pay: 8000, transport: false, gift_id: "g1" },
       { id: "j2", period: "short", type: "ボランティア", title: "カツオ祭り手伝い", date: "10/11〜12", pay: null, transport: false, gift_id: "g1" },
@@ -182,6 +207,11 @@ const TOWNS = [
     industries: [{ name: "観光", detail: "只見線ファン・撮り鉄" }, { name: "林業", detail: "ブナ材・木工" }],
     support: ["移住支援金（最大200万円）", "空き家無償提供制度", "医療費補助"],
     foreigners_ok: true,
+    imageUrl: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=800&q=80&auto=format&fit=crop",
+    catchCopy: "奇跡の鉄道・只見線の里。全産業でSOSを発信中。移住支援金最大200万円。",
+    issueTags: ["全産業人材不足", "高齢化・孤立", "冬季交通リスク"],
+    participationThemes: ["雪かき支援", "鉄道観光", "移住定住", "地域おこし協力隊"],
+    sosSummary: "SOSスコア全国トップ。冬の孤立・医療アクセス・全産業で人材を緊急募集。移住支援金最大200万円。",
     jobs: [
       { id: "j1", period: "spot", type: "単発アルバイト", title: "雪かきボランティア（有償）", date: "12〜3月 随時", pay: 6000, transport: true, gift_id: "g1" },
       { id: "j2", period: "spot", type: "単発アルバイト", title: "只見線撮影ガイド", date: "紅葉シーズン 10〜11月", pay: 7500, transport: false, gift_id: "g2" },
@@ -214,6 +244,11 @@ const TOWNS = [
     industries: [{ name: "観光・温泉", detail: "旅館・ペンション" }, { name: "農業", detail: "有機野菜・ジビエ" }],
     support: ["温泉入り放題（移住者特典）", "農業研修制度", "移住者向け交流会"],
     foreigners_ok: true,
+    imageUrl: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=80&auto=format&fit=crop",
+    catchCopy: "日本一の温泉湧出量の町で働く。温泉旅館と農業の担い手に入湯特典あり。",
+    issueTags: ["旅館担い手不足", "農業後継者不足", "IT人材皆無"],
+    participationThemes: ["温泉旅館スタッフ", "農業体験", "SNS・DX支援", "移住定住"],
+    sosSummary: "温泉旅館・農業・ITの全分野で人材不足深刻。移住者には温泉入り放題の特典あり。",
     jobs: [
       { id: "j1", period: "spot", type: "単発アルバイト", title: "花公園 植栽・整備スタッフ", date: "春・秋 各3日", pay: 7000, transport: false, gift_id: "g1" },
       { id: "j2", period: "mid", type: "副業", title: "旅館のSNS・動画制作", date: "3ヶ月〜", pay: "要相談", remote: true, gift_id: "g2" },
@@ -245,6 +280,11 @@ const TOWNS = [
     industries: [{ name: "農業", detail: "ホップ・山菜" }, { name: "観光", detail: "民話・体験ツーリズム" }],
     support: ["Uターン奨励金", "住宅改修補助", "農業就農支援"],
     foreigners_ok: false,
+    imageUrl: "https://images.unsplash.com/photo-1574236170880-fecf8cd7e2e4?w=800&q=80&auto=format&fit=crop",
+    catchCopy: "カッパの里、ホップの産地。日本のふるさとと共に歩む人を求む。",
+    issueTags: ["介護人材不足", "Uターン促進", "農業後継者不足"],
+    participationThemes: ["ホップ農業", "民話観光", "介護支援", "Uターン移住"],
+    sosSummary: "介護・農業後継者不足が深刻。全国のビールを支えるホップ農業と民話文化の担い手を求む。",
     jobs: [
       { id: "j1", period: "spot", type: "単発アルバイト", title: "ホップ収穫アルバイト", date: "8月上旬 5日間", pay: 8000, transport: true, gift_id: "g1" },
       { id: "j2", period: "short", type: "ボランティア", title: "遠野まつり 民俗芸能補助", date: "9/12〜14", pay: null, transport: false, gift_id: "g2" },
@@ -455,32 +495,60 @@ function TownCard({ town, userLoc, favorites, onToggleFav, onClick, rank }) {
       onClick={() => onClick(town)}
       className="relative bg-white rounded-2xl cursor-pointer hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden border border-gray-100 shadow-sm group"
     >
-      {/* Urgency stripe */}
-      <div className={`h-1 w-full ${isUrgent ? "bg-gradient-to-r from-red-500 to-rose-400" : town.sos_score >= 80 ? "bg-gradient-to-r from-amber-400 to-orange-400" : "bg-gradient-to-r from-blue-400 to-indigo-400"}`} />
+      {/* Hero image */}
+      <div className="relative h-36 sm:h-40 overflow-hidden">
+        {/* Fallback gradient (always rendered, covered by image if successful) */}
+        <div className={`absolute inset-0 ${isUrgent ? "bg-gradient-to-br from-red-700 to-rose-600" : town.sos_score >= 80 ? "bg-gradient-to-br from-amber-600 to-orange-500" : "bg-gradient-to-br from-indigo-700 to-blue-600"}`} />
+        {town.imageUrl && (
+          <img
+            src={town.imageUrl}
+            alt={town.name}
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            onError={e => { e.target.style.display = "none"; }}
+          />
+        )}
+        {/* Dark gradient overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/78 via-black/25 to-transparent" />
 
-      <div className="p-5">
-        {/* Header row */}
-        <div className="flex items-start justify-between mb-4">
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="text-xs text-gray-400 font-medium">{town.prefecture}</span>
-              {isUrgent && <Badge className="bg-red-50 text-red-600 border border-red-100 text-xs">緊急</Badge>}
-              {distH !== null && distH <= 3 && (
-                <Badge className="bg-emerald-50 text-emerald-700 border border-emerald-100">近い</Badge>
-              )}
-            </div>
-            <div className="text-lg font-bold text-gray-900">{town.name}</div>
-          </div>
-          <button
-            onClick={e => { e.stopPropagation(); onToggleFav(town.id); }}
-            className="ml-2 w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors text-base flex-shrink-0"
-          >
-            {isFav ? "❤️" : "🤍"}
-          </button>
+        {/* Top badges */}
+        <div className="absolute top-2.5 left-2.5 flex gap-1.5 flex-wrap">
+          {isUrgent && (
+            <span className="text-xs bg-red-500 text-white px-2 py-0.5 rounded-full font-semibold shadow-sm">緊急SOS</span>
+          )}
+          {distH !== null && distH <= 3 && (
+            <span className="text-xs bg-emerald-500 text-white px-2 py-0.5 rounded-full font-semibold shadow-sm">近い</span>
+          )}
         </div>
 
+        {/* Fav button */}
+        <button
+          onClick={e => { e.stopPropagation(); onToggleFav(town.id); }}
+          className="absolute top-2.5 right-2.5 w-8 h-8 flex items-center justify-center rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/50 transition-colors text-base"
+        >
+          {isFav ? "❤️" : "🤍"}
+        </button>
+
+        {/* Town info on image */}
+        <div className="absolute bottom-0 left-0 right-0 p-3">
+          <span className="text-xs text-white/60 font-medium">{town.prefecture}</span>
+          <div className="text-lg font-bold text-white leading-tight drop-shadow">{town.name}</div>
+          {town.catchCopy && (
+            <div className="text-xs text-white/75 mt-0.5 leading-snug line-clamp-1">{town.catchCopy}</div>
+          )}
+          {town.issueTags && (
+            <div className="flex flex-wrap gap-1 mt-1.5">
+              {town.issueTags.slice(0, 2).map(tag => (
+                <span key={tag} className="text-xs bg-white/20 backdrop-blur-sm text-white/90 border border-white/30 px-2 py-0.5 rounded-full">{tag}</span>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Content below image */}
+      <div className="p-4">
         {/* SOS Score */}
-        <div className="mb-4">
+        <div className="mb-3.5">
           <div className="flex items-center justify-between mb-1.5">
             <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">SOSスコア</span>
             <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${c.light} ${c.text}`}>{c.label}</span>
@@ -489,7 +557,7 @@ function TownCard({ town, userLoc, favorites, onToggleFav, onClick, rank }) {
         </div>
 
         {/* Stats row */}
-        <div className="grid grid-cols-3 gap-2 mb-4">
+        <div className="grid grid-cols-3 gap-2 mb-3.5">
           <div className="text-center bg-gray-50 rounded-xl py-2">
             <div className="text-xs text-gray-400 mb-0.5">高齢化率</div>
             <div className="text-sm font-bold text-gray-700">{town.aging_rate}%</div>
@@ -504,13 +572,6 @@ function TownCard({ town, userLoc, favorites, onToggleFav, onClick, rank }) {
           </div>
         </div>
 
-        {/* Issues */}
-        <div className="flex flex-wrap gap-1.5 mb-4">
-          {town.issues.slice(0,3).map(i => (
-            <span key={i} className="text-xs bg-red-50 text-red-600 px-2.5 py-0.5 rounded-full border border-red-100 font-medium">{i}</span>
-          ))}
-        </div>
-
         {/* Spot jobs CTA */}
         {spotJobs.length > 0 && (
           <div className="bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-100 rounded-xl px-3 py-2.5">
@@ -519,7 +580,7 @@ function TownCard({ town, userLoc, favorites, onToggleFav, onClick, rank }) {
           </div>
         )}
 
-        {/* Footer: distance */}
+        {/* Footer: distance + jobs count */}
         {dist && (
           <div className="mt-3 pt-3 border-t border-gray-50 flex items-center gap-1 text-xs text-gray-400">
             <span>📍</span>
@@ -722,57 +783,100 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={onClose}>
       <div
-        className="bg-white w-full sm:max-w-2xl sm:rounded-3xl rounded-t-3xl max-h-[94vh] overflow-hidden flex flex-col shadow-2xl"
+        className="bg-white w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl sm:rounded-3xl rounded-t-3xl max-h-[94vh] overflow-hidden flex flex-col shadow-2xl"
         onClick={e => e.stopPropagation()}
       >
-        {/* Header */}
-        <div className={`${c.light} px-5 pt-5 pb-4`}>
-          {/* Drag handle */}
-          <div className="w-10 h-1 bg-gray-300 rounded-full mx-auto mb-4 sm:hidden" />
+        {/* Hero image header */}
+        <div className="relative flex-shrink-0">
+          <div className="relative h-48 sm:h-56 overflow-hidden">
+            {/* Fallback gradient */}
+            <div className={`absolute inset-0 ${c.label === "緊急" ? "bg-gradient-to-br from-red-700 to-rose-600" : "bg-gradient-to-br from-indigo-700 to-purple-700"}`} />
+            {town.imageUrl && (
+              <img
+                src={town.imageUrl}
+                alt={town.name}
+                className="absolute inset-0 w-full h-full object-cover"
+                onError={e => { e.target.style.display = "none"; }}
+              />
+            )}
+            {/* Gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/82 via-black/35 to-transparent" />
 
-          <div className="flex items-start justify-between mb-3">
-            <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-medium text-gray-400">{town.prefecture}</span>
-                {c.label === "緊急" && <Badge className="bg-red-500 text-white text-xs px-2 py-0.5">緊急SOS</Badge>}
-                {town.foreigners_ok && <Badge className="bg-indigo-100 text-indigo-600 text-xs">外国人材OK</Badge>}
+            {/* Mobile drag handle */}
+            <div className="absolute top-3 left-1/2 -translate-x-1/2 w-10 h-1 bg-white/40 rounded-full sm:hidden" />
+
+            {/* Controls */}
+            <div className="absolute top-4 right-4 flex items-center gap-2">
+              <button
+                onClick={() => onToggleFav(town.id)}
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/50 transition-colors text-xl"
+              >
+                {isFav ? "❤️" : "🤍"}
+              </button>
+              <button
+                onClick={onClose}
+                className="w-9 h-9 flex items-center justify-center bg-black/30 backdrop-blur-sm hover:bg-black/50 rounded-full text-white font-bold transition-colors text-sm leading-none"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Town identity on image */}
+            <div className="absolute bottom-0 left-0 right-0 p-5">
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="text-xs text-white/60 font-medium">{town.prefecture}</span>
+                {c.label === "緊急" && (
+                  <span className="text-xs bg-red-500 text-white px-2 py-0.5 rounded-full font-semibold">緊急SOS</span>
+                )}
+                {town.foreigners_ok && (
+                  <span className="text-xs bg-white/20 backdrop-blur-sm text-white border border-white/30 px-2 py-0.5 rounded-full">外国人材OK</span>
+                )}
               </div>
-              <div className="text-2xl font-bold text-gray-900">{town.name}</div>
-            </div>
-            <div className="flex items-center gap-2">
-              <button onClick={() => onToggleFav(town.id)} className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-white/60 transition-colors text-xl">{isFav ? "❤️" : "🤍"}</button>
-              <button onClick={onClose} className="w-9 h-9 flex items-center justify-center bg-white/60 hover:bg-white/90 rounded-full text-gray-500 font-medium transition-colors">✕</button>
+              <div className="text-2xl font-bold text-white leading-tight drop-shadow-md">{town.name}</div>
+              {town.catchCopy && (
+                <div className="text-sm text-white/80 mt-1 leading-snug">{town.catchCopy}</div>
+              )}
+              {town.issueTags && (
+                <div className="flex flex-wrap gap-1.5 mt-2">
+                  {town.issueTags.map(tag => (
+                    <span key={tag} className="text-xs bg-white/20 backdrop-blur-sm text-white border border-white/30 px-2.5 py-0.5 rounded-full font-medium">{tag}</span>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
 
-          {/* SOS */}
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-medium text-gray-500 whitespace-nowrap">SOSスコア</span>
-            <div className="flex-1"><SosBar score={town.sos_score} /></div>
-            {dist && <span className="text-xs text-emerald-600 font-medium whitespace-nowrap">📍 {distanceLabel(dist)}</span>}
-          </div>
+          {/* SOS bar + Stats + Characters */}
+          <div className={`${c.light} px-5 pt-4 pb-4`}>
+            {/* SOS */}
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-xs font-medium text-gray-500 whitespace-nowrap">SOSスコア</span>
+              <div className="flex-1"><SosBar score={town.sos_score} /></div>
+              {dist && <span className="text-xs text-emerald-600 font-medium whitespace-nowrap">📍 {distanceLabel(dist)}</span>}
+            </div>
 
-          {/* Stats row */}
-          <div className="grid grid-cols-4 gap-2">
-            {[
-              ["人口", `${(town.population/10000).toFixed(1)}万人`],
-              ["高齢化率", `${town.aging_rate}%`],
-              ["家賃目安", `¥${(town.rent/10000).toFixed(1)}万`],
-              ["通勤", `${town.commute_min}分`],
-            ].map(([l, v]) => (
-              <div key={l} className="text-center bg-white/60 rounded-xl py-2 border border-white/50">
-                <div className="text-xs text-gray-400 mb-0.5">{l}</div>
-                <div className="text-sm font-bold text-gray-800">{v}</div>
+            {/* Stats row */}
+            <div className="grid grid-cols-4 gap-2">
+              {[
+                ["人口", `${(town.population/10000).toFixed(1)}万人`],
+                ["高齢化率", `${town.aging_rate}%`],
+                ["家賃目安", `¥${(town.rent/10000).toFixed(1)}万`],
+                ["通勤", `${town.commute_min}分`],
+              ].map(([l, v]) => (
+                <div key={l} className="text-center bg-white/60 rounded-xl py-2 border border-white/50">
+                  <div className="text-xs text-gray-400 mb-0.5">{l}</div>
+                  <div className="text-sm font-bold text-gray-800">{v}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* Characters */}
+            {town.characters?.length > 0 && (
+              <div className="mt-3 space-y-2">
+                {town.characters.map((ch, i) => <CharacterBubble key={i} char={ch} townName={town.name} />)}
               </div>
-            ))}
+            )}
           </div>
-
-          {/* Characters */}
-          {town.characters?.length > 0 && (
-            <div className="mt-3 space-y-2">
-              {town.characters.map((ch, i) => <CharacterBubble key={i} char={ch} townName={town.name} />)}
-            </div>
-          )}
         </div>
 
         {/* AI紹介文 */}
@@ -820,10 +924,24 @@ function TownDetail({ town, userLoc, favorites, onToggleFav, onClose, isLoggedIn
               ))}
               <div className="mt-4 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-100 rounded-2xl p-4">
                 <p className="text-sm text-indigo-700 font-medium mb-2">あなたの力が必要です</p>
-                <p className="text-xs text-indigo-600 leading-relaxed mb-3">これらの課題に、副業・ボランティア・移住など、さまざまな形で関われます。</p>
-                <button onClick={() => setTab("jobs")} className="text-xs bg-indigo-600 text-white px-4 py-2 rounded-xl font-medium hover:bg-indigo-700 transition-colors">
-                  関わり方を見る →
-                </button>
+                <p className="text-xs text-indigo-600 leading-relaxed mb-3">
+                  {town.sosSummary || "これらの課題に、副業・ボランティア・移住など、さまざまな形で関われます。"}
+                </p>
+                {town.participationThemes && (
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    {town.participationThemes.map(theme => (
+                      <span key={theme} className="text-xs bg-indigo-100 text-indigo-700 border border-indigo-200 px-2.5 py-0.5 rounded-full font-medium">{theme}</span>
+                    ))}
+                  </div>
+                )}
+                <div className="flex gap-2 flex-wrap">
+                  <button onClick={() => setTab("jobs")} className="text-xs bg-indigo-600 text-white px-4 py-2 rounded-xl font-medium hover:bg-indigo-700 transition-colors">
+                    関わり方を見る →
+                  </button>
+                  <button onClick={() => setTab("industry")} className="text-xs border border-indigo-200 text-indigo-700 px-4 py-2 rounded-xl font-medium hover:bg-indigo-50 transition-colors">
+                    企業として相談する
+                  </button>
+                </div>
               </div>
             </div>
           )}
@@ -1083,7 +1201,7 @@ function AIRecommendPage({ towns, user, userLoc }) {
   const skillList = skills.split(/[、,]/).map(v => v.trim()).filter(Boolean);
 
   return (
-    <div className="max-w-xl mx-auto px-4 py-6">
+    <div className="max-w-2xl mx-auto px-4 py-6">
       {/* Page header */}
       <div className="mb-6">
         <div className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">AI マッチング</div>
@@ -1170,7 +1288,7 @@ function AIRecommendPage({ towns, user, userLoc }) {
 function MyPage({ user, towns, favorites, onToggleFav }) {
   const favTowns = towns.filter(t => favorites.includes(t.id));
   return (
-    <div className="max-w-xl mx-auto px-4 py-6 space-y-5">
+    <div className="max-w-2xl mx-auto px-4 py-6 space-y-5">
       {/* Profile card */}
       <div className="relative bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 rounded-3xl p-5 text-white overflow-hidden">
         <div className="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -translate-y-10 translate-x-10" />
@@ -1289,7 +1407,7 @@ function EventsPage({ towns, userLoc }) {
   const staffEvents = allEvents.filter(e => e.has_staff_job).length;
 
   return (
-    <div className="max-w-xl mx-auto px-4 py-6">
+    <div className="max-w-2xl mx-auto px-4 py-6">
       <div className="mb-5">
         <div className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">全国イベント</div>
         <h2 className="text-2xl font-bold text-gray-900">地域のイベントに参加する</h2>
@@ -1423,7 +1541,7 @@ export default function MachiMatch() {
     <div className="min-h-screen bg-slate-50 flex flex-col" style={{ fontFamily: "'Hiragino Sans', 'Noto Sans JP', sans-serif" }}>
       {/* TOP BAR */}
       <header className="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
-        <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-white text-sm font-bold shadow-sm">M</div>
             <div>
@@ -1462,9 +1580,9 @@ export default function MachiMatch() {
           <div>
             {/* Hero section */}
             <div className="bg-gradient-to-br from-indigo-700 via-indigo-600 to-purple-700 text-white">
-              <div className="max-w-2xl mx-auto px-4 py-8">
+              <div className="max-w-6xl mx-auto px-4 py-8 sm:py-10 lg:py-14">
                 <div className="text-xs font-semibold text-indigo-300 uppercase tracking-widest mb-2">地域共創プラットフォーム</div>
-                <h1 className="text-2xl sm:text-3xl font-bold leading-snug mb-2">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug mb-2">
                   助けを求める町と<br/>力を活かしたい人をつなぐ
                 </h1>
                 <p className="text-sm text-indigo-200 leading-relaxed mb-5">
@@ -1503,7 +1621,7 @@ export default function MachiMatch() {
 
             {/* Search & filters */}
             <div className="bg-white border-b border-gray-100 sticky top-[57px] z-30 shadow-sm">
-              <div className="max-w-2xl mx-auto px-4 py-3 space-y-2">
+              <div className="max-w-6xl mx-auto px-4 py-3 space-y-2">
                 <input
                   value={search}
                   onChange={e => setSearch(e.target.value)}
@@ -1554,7 +1672,7 @@ export default function MachiMatch() {
             </div>
 
             {/* Emergency banner */}
-            <div className="max-w-2xl mx-auto px-4 pt-5">
+            <div className="max-w-6xl mx-auto px-4 pt-5">
               <div className="relative bg-gradient-to-r from-red-600 to-rose-500 text-white rounded-2xl px-5 py-4 mb-5 overflow-hidden shadow-md">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-8 translate-x-8" />
                 <div className="relative flex items-center justify-between gap-4">
@@ -1577,12 +1695,12 @@ export default function MachiMatch() {
             </div>
 
             {/* Town grid */}
-            <div className="max-w-2xl mx-auto px-4 pb-6">
+            <div className="max-w-6xl mx-auto px-4 pb-6">
               <div className="flex items-center justify-between mb-4">
                 <div className="text-sm font-semibold text-gray-700">{towns.length}自治体</div>
                 {search && <div className="text-xs text-gray-400">「{search}」の検索結果</div>}
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {towns.map((t, i) => (
                   <TownCard
                     key={t.id}
@@ -1620,7 +1738,7 @@ export default function MachiMatch() {
 
       {/* BOTTOM NAV */}
       <nav className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-gray-100 z-40 shadow-lg">
-        <div className="max-w-2xl mx-auto flex">
+        <div className="max-w-6xl mx-auto flex">
           {navItems.map(item => (
             <button
               key={item.id}
